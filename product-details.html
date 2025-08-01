@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Product Details | Wow Nandi</title>
+</head>
+<body>
+    <div class="loader">
+        <div>
+            <img class="cow-body" src="images/cow/cow-body.svg" alt="">
+            <img class="ground" src="images/cow/ground.svg" alt="">
+            <img class="leg-b1" src="images/cow/leg-b1.svg" alt="">
+            <img class="leg-b2" src="images/cow/leg-b2.svg" alt="">
+            <img class="leg-f1" src="images/cow/leg-f1.svg" alt="">
+            <img class="leg-f2" src="images/cow/leg-f2.svg" alt="">
+            <div class="plants"></div>
+        </div>
+    </div>
+
+    
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p class="my-0">OFFER ~ OFFER ~ OFFER</p>
+                    </div>
+                    <div class="col text-end">
+                        <span>24/7 Support</span>
+                        <a href="tel:9619635420">96196 35420</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 d-none d-xl-block">
+    
+                    </div>
+                    <div class="col-xl-8 col-lg-12 col-4">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NANDI Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="logo">
+                                <a href="#"><img width="100" src="images/logo.svg" alt="Wow Nandi"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Earn with NANDI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gifting</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-12  align-self-center text-end">
+                        <ul class="nav nav-sm">
+                            <li class="logo">
+                                <a href="#"><img width="100" src="images/logo.svg" alt="Wow Nandi"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.67 31.08"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M23.3,31.08a2.7,2.7,0,0,1-.49,0,3.37,3.37,0,0,1-2.22-1.32l-5.51-7.38a11.46,11.46,0,1,1,5.5-3.92L26,25.68a3.37,3.37,0,0,1-.69,4.73A3.33,3.33,0,0,1,23.3,31.08ZM15.77,19.92l6.42,8.6a1.38,1.38,0,0,0,1.93.28,1.37,1.37,0,0,0,.28-1.92L18,18.34l.54-.61a9.49,9.49,0,0,0,.48-11.92,9.46,9.46,0,1,0-4,14.41Z"/></g></g></svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.9 32.46"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,31.56v.9H29.9v-.9a15,15,0,0,0-9.8-14l-.69-.26.62-.41a9.21,9.21,0,1,0-10.15,0l.61.41-.69.26A15,15,0,0,0,0,31.56ZM7.55,9.2A7.4,7.4,0,1,1,15,16.6,7.41,7.41,0,0,1,7.55,9.2ZM15,18.41A13.1,13.1,0,0,1,28,30.24l0,.41H1.83l0-.41A13.1,13.1,0,0,1,15,18.41Z"/></g></g></svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.55 41.33"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M38.62,0a4.17,4.17,0,0,0-4.07,3.2L33.41,7.92H4.19A4.19,4.19,0,0,0,.12,13.09L3.56,27.22a4.17,4.17,0,0,0,4.06,3.19H26.34a4.16,4.16,0,0,0,4.06-3.19l1.2-4.93h0l0-.09L35.1,7.92h0l1-4.34a2.57,2.57,0,0,1,2.51-2h4.93V0ZM28.84,26.84a2.57,2.57,0,0,1-2.5,2H7.62a2.57,2.57,0,0,1-2.5-2L1.68,12.71A2.59,2.59,0,0,1,4.19,9.52H33L30.9,18.36h-21V20H30.51l-.47,2h0Z"/><path class="cls-1" d="M27.67,32.5a4.42,4.42,0,1,0,4.42,4.42A4.42,4.42,0,0,0,27.67,32.5Zm0,7.22a2.81,2.81,0,1,1,2.81-2.8A2.81,2.81,0,0,1,27.67,39.72Z"/><path class="cls-1" d="M6.29,32.5a4.42,4.42,0,1,0,4.41,4.42A4.42,4.42,0,0,0,6.29,32.5Zm0,7.22a2.81,2.81,0,1,1,2.81-2.8A2.81,2.81,0,0,1,6.29,39.72Z"/></g></g></svg>
+                                </a>
+                            </li>
+                            <li class="nav-item menu-btn">
+                                <a class="nav-link" href="#">
+                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.66 37.42"><defs><style>.cls-1{fill:#d24182;}</style></defs><path class="cls-1" d="M2.67,4.68A11.65,11.65,0,0,0,3.83,6a10.1,10.1,0,0,0,2,1.43,5.84,5.84,0,0,0,6.73-1.29c.69-.68,1.29-1.46,2-2.13a2.77,2.77,0,0,1,4.09,0c.55.54,1.05,1.15,1.58,1.73a6.14,6.14,0,0,0,2.74,1.89A5.87,5.87,0,0,0,29.18,6c.61-.6,1.15-1.27,1.73-1.9a2.92,2.92,0,0,1,4.47,0c.74.77,1.41,1.62,2.21,2.32a5.77,5.77,0,0,0,7.77-.06c.71-.63,1.31-1.38,2-2.08,1.53-1.66,3.24-1.69,4.79,0,.56.59,1.08,1.23,1.65,1.81a5.77,5.77,0,0,0,3.9,1.79V4.83a3.48,3.48,0,0,1-1.91-1.1c-.48-.51-.94-1-1.41-1.58a6,6,0,0,0-9.24,0A14.93,14.93,0,0,1,43.64,3.8a4.44,4.44,0,0,1-1.59.94,2.64,2.64,0,0,1-2.78-.89c-.64-.69-1.24-1.41-1.9-2.06a5.89,5.89,0,0,0-8.43,0c-.58.57-1.1,1.21-1.66,1.81C25.7,5.3,24,5.3,22.42,3.59c-.59-.64-1.15-1.32-1.78-1.93A5.81,5.81,0,0,0,15.3.15a6.59,6.59,0,0,0-3.72,2.4c-.49.55-1,1.12-1.53,1.62a2.63,2.63,0,0,1-2.29.62,3.26,3.26,0,0,1-1.9-1.17C5.05,2.79,4.29,1.9,3.41,1.15A4.86,4.86,0,0,0,0,.06v3A3.5,3.5,0,0,1,2.67,4.68Z"/><path class="cls-1" d="M2.67,19.32a10.05,10.05,0,0,0,1.16,1.27A9.75,9.75,0,0,0,5.8,22a5.85,5.85,0,0,0,6.73-1.29c.69-.68,1.29-1.46,2-2.14a2.78,2.78,0,0,1,4.09,0c.55.55,1.05,1.16,1.58,1.74a6.22,6.22,0,0,0,2.74,1.89,5.89,5.89,0,0,0,6.25-1.57c.61-.61,1.15-1.27,1.73-1.9a2.91,2.91,0,0,1,2.61-1,3,3,0,0,1,1.86,1c.74.77,1.41,1.62,2.21,2.32a5.79,5.79,0,0,0,7.77-.06c.71-.63,1.31-1.38,2-2.08,1.53-1.67,3.24-1.69,4.79-.05.56.6,1.08,1.24,1.65,1.82a5.81,5.81,0,0,0,3.9,1.79V19.48a3.48,3.48,0,0,1-1.91-1.1c-.48-.51-.94-1.05-1.41-1.58a6,6,0,0,0-9.24,0,14.93,14.93,0,0,1-1.46,1.61,4.59,4.59,0,0,1-1.59.94,2.64,2.64,0,0,1-2.78-.9c-.64-.68-1.24-1.4-1.9-2.06a5.89,5.89,0,0,0-8.43,0c-.58.57-1.1,1.21-1.66,1.81-1.58,1.72-3.28,1.73-4.86,0-.59-.65-1.15-1.33-1.78-1.93A5.81,5.81,0,0,0,15.3,14.8a6.54,6.54,0,0,0-3.72,2.4c-.49.55-1,1.11-1.53,1.62a2.63,2.63,0,0,1-2.29.62,3.36,3.36,0,0,1-1.9-1.17c-.81-.83-1.57-1.72-2.45-2.47A4.82,4.82,0,0,0,0,14.7v3.05A3.52,3.52,0,0,1,2.67,19.32Z"/><path class="cls-1" d="M2.67,34.15a11.65,11.65,0,0,0,1.16,1.27,9.7,9.7,0,0,0,2,1.43,5.83,5.83,0,0,0,6.73-1.28c.69-.69,1.29-1.46,2-2.14a2.78,2.78,0,0,1,4.09,0c.55.55,1.05,1.16,1.58,1.73a6.14,6.14,0,0,0,2.74,1.89,5.87,5.87,0,0,0,6.25-1.56c.61-.61,1.15-1.27,1.73-1.91a2.91,2.91,0,0,1,4.47,0c.74.77,1.41,1.61,2.21,2.32a5.79,5.79,0,0,0,7.77-.06c.71-.64,1.31-1.38,2-2.08,1.53-1.67,3.24-1.69,4.79-.05.56.6,1.08,1.24,1.65,1.82a5.76,5.76,0,0,0,3.9,1.78V34.3a3.4,3.4,0,0,1-1.91-1.09c-.48-.51-.94-1.05-1.41-1.58a6,6,0,0,0-9.24,0,14.82,14.82,0,0,1-1.46,1.6,4.46,4.46,0,0,1-1.59.95,2.64,2.64,0,0,1-2.78-.9c-.64-.68-1.24-1.41-1.9-2.06a5.89,5.89,0,0,0-8.43,0c-.58.56-1.1,1.21-1.66,1.81-1.58,1.72-3.28,1.73-4.86,0-.59-.64-1.15-1.32-1.78-1.93a5.81,5.81,0,0,0-5.34-1.5A6.58,6.58,0,0,0,11.58,32a21.36,21.36,0,0,1-1.53,1.62,2.63,2.63,0,0,1-2.29.63,3.36,3.36,0,0,1-1.9-1.17c-.81-.83-1.57-1.72-2.45-2.47A4.82,4.82,0,0,0,0,29.53v3A3.49,3.49,0,0,1,2.67,34.15Z"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <section class="product-main nijal-world-product after-hd">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                                <div class="product-img">
+                                    <img src="images/product-main-1.jpg" alt="">
+                                </div>
+                          </div>
+                    
+                          <div class="item">
+                            <div class="product-img">
+                                <img src="images/product-main-1.jpg" alt="">
+                            </div>
+                          </div>
+                        
+                          <div class="item">
+                            <div class="product-img">
+                                <img src="images/product-main-1.jpg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                      
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only"><img src="images/left-rrr.png " width="30%"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only"><img src="images/right-rrr.png" width="30%"></span>
+                        </a>
+                       
+                      </div>
+                </div>
+                <div class="col-md-5 offset-md-1 product-right">
+                    <h3>Product Name</h3>
+                    <div class="price">₹ 1000/-</div>
+                    <div class="product-details">
+                        <p>We think you will We think you willlike these too think you will We think you willlike these too you willlike these too you willlike these too We think you will We think you willlike these too...</p>
+                        <a class="slideIn-btn " href="#">Read more</a>
+                    </div>
+                    <div class="spinner">
+                        <label for="Qty">Qty</label>
+                        <div class="minus">-</div>
+                        <input class="qty" id="Qty" value="0" type="number">
+                        <div class="plus">+</div>
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Subcribe and save
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                One time purchase
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="product-btn">
+                        <button type="button" class="btn btn-outline-secondary"> <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 476.944 476.944" xml:space="preserve"><g><path d="M84.176,379.875c-26.762,0-48.535,21.772-48.535,48.534s21.772,48.534,48.535,48.534c26.762,0,48.534-21.772,48.534-48.534   S110.938,379.875,84.176,379.875z M84.176,446.944c-10.22,0-18.535-8.314-18.535-18.534s8.314-18.534,18.535-18.534   c10.22,0,18.534,8.314,18.534,18.534S94.396,446.944,84.176,446.944z"/><path d="M342.707,379.875c-26.762,0-48.534,21.772-48.534,48.534s21.772,48.534,48.534,48.534   c26.762,0,48.535-21.772,48.535-48.534S369.469,379.875,342.707,379.875z M342.707,446.944c-10.22,0-18.534-8.314-18.534-18.534   s8.314-18.534,18.534-18.534c10.22,0,18.535,8.314,18.535,18.534S352.927,446.944,342.707,446.944z"/><path d="M413.322,0l-9.835,60H1.999l28.736,175.88c4.044,24.67,26.794,43.995,51.794,43.995h284.917l-6.557,40H50.642v30h335.73   L438.804,30h36.141V0H413.322z M372.363,249.875H82.529c-10.174,0-20.543-8.808-22.188-18.841L37.298,90h361.271L372.363,249.875z"/></g></svg></span> Add to cart</button>
+                        <button type="button" class="btn btn-primary">Buy now</button>
+                        <button type="button" class="btn btn-outline-secondary wishlist"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 16" fill="none">
+                            <path d="M10.2369 2.19522L10.237 2.19513C10.6162 1.81576 11.0664 1.51481 11.5619 1.30948C12.0575 1.10416 12.5886 0.998474 13.125 0.998474C13.6614 0.998474 14.1925 1.10416 14.6881 1.30948C15.1836 1.51481 15.6338 1.81576 16.013 2.19513L16.0132 2.1953C16.3926 2.5745 16.6935 3.02472 16.8988 3.52026C17.1042 4.0158 17.2099 4.54694 17.2099 5.08333C17.2099 5.61972 17.1042 6.15086 16.8988 6.6464C16.6935 7.14193 16.3926 7.59216 16.0132 7.97136L16.0131 7.97144L15.1298 8.85478L9 14.9846L2.87022 8.85478L1.98688 7.97144C1.22091 7.20547 0.790588 6.16658 0.790588 5.08333C0.790588 4.00008 1.22091 2.96119 1.98688 2.19522C2.75286 1.42924 3.79174 0.99892 4.875 0.99892C5.95825 0.99892 6.99714 1.42924 7.76311 2.19522L8.64644 3.07855C8.84171 3.27381 9.15829 3.27381 9.35355 3.07855L10.2369 2.19522Z" stroke="#d13f81" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></span>
+                        </button>
+                    </div>
+                    <div class="share-btn">
+                        <span>Share :</span>
+                        <ul>
+                            <li><a href="#"><span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7.90001C11.1891 7.90001 10.3964 8.14048 9.72218 8.59099C9.04794 9.0415 8.52243 9.68184 8.21211 10.431C7.90179 11.1802 7.8206 12.0046 7.9788 12.7999C8.13699 13.5952 8.52748 14.3258 9.10088 14.8992C9.67427 15.4725 10.4048 15.863 11.2001 16.0212C11.9955 16.1794 12.8198 16.0982 13.569 15.7879C14.3182 15.4776 14.9585 14.9521 15.409 14.2779C15.8596 13.6036 16.1 12.8109 16.1 12C16.1013 11.4612 15.9962 10.9275 15.7906 10.4295C15.585 9.93142 15.2831 9.47892 14.9021 9.09794C14.5211 8.71695 14.0686 8.415 13.5706 8.20942C13.0725 8.00385 12.5388 7.8987 12 7.90001ZM12 14.67C11.4719 14.67 10.9557 14.5134 10.5166 14.22C10.0776 13.9267 9.73534 13.5097 9.53326 13.0218C9.33117 12.5339 9.2783 11.9971 9.38132 11.4791C9.48434 10.9612 9.73863 10.4854 10.112 10.112C10.4854 9.73863 10.9612 9.48434 11.4791 9.38132C11.9971 9.2783 12.5339 9.33117 13.0218 9.53326C13.5097 9.73534 13.9267 10.0776 14.22 10.5166C14.5134 10.9557 14.67 11.4719 14.67 12C14.67 12.7081 14.3887 13.3873 13.888 13.888C13.3873 14.3887 12.7081 14.67 12 14.67ZM17.23 7.73001C17.23 7.9278 17.1714 8.12114 17.0615 8.28558C16.9516 8.45003 16.7954 8.57821 16.6127 8.65389C16.43 8.72958 16.2289 8.74938 16.0349 8.7108C15.8409 8.67221 15.6628 8.57697 15.5229 8.43712C15.3831 8.29727 15.2878 8.11909 15.2492 7.92511C15.2106 7.73112 15.2304 7.53006 15.3061 7.34733C15.3818 7.16461 15.51 7.00843 15.6744 6.89855C15.8389 6.78866 16.0322 6.73001 16.23 6.73001C16.4952 6.73001 16.7496 6.83537 16.9371 7.02291C17.1247 7.21044 17.23 7.4648 17.23 7.73001ZM19.94 8.73001C19.9691 7.48684 19.5054 6.28261 18.65 5.38001C17.7522 4.5137 16.5474 4.03897 15.3 4.06001C14 4.00001 10 4.00001 8.70001 4.06001C7.45722 4.0331 6.25379 4.49652 5.35001 5.35001C4.49465 6.25261 4.03093 7.45684 4.06001 8.70001C4.00001 10 4.00001 14 4.06001 15.3C4.03093 16.5432 4.49465 17.7474 5.35001 18.65C6.25379 19.5035 7.45722 19.9669 8.70001 19.94C10.02 20.02 13.98 20.02 15.3 19.94C16.5432 19.9691 17.7474 19.5054 18.65 18.65C19.5054 17.7474 19.9691 16.5432 19.94 15.3C20 14 20 10 19.94 8.70001V8.73001ZM18.24 16.73C18.1042 17.074 17.8993 17.3863 17.6378 17.6478C17.3763 17.9093 17.064 18.1142 16.72 18.25C15.1676 18.5639 13.5806 18.6715 12 18.57C10.4228 18.6716 8.83902 18.564 7.29001 18.25C6.94608 18.1142 6.63369 17.9093 6.37223 17.6478C6.11076 17.3863 5.90579 17.074 5.77001 16.73C5.35001 15.67 5.44001 13.17 5.44001 12.01C5.44001 10.85 5.35001 8.34001 5.77001 7.29001C5.90196 6.94268 6.10547 6.62698 6.36733 6.36339C6.62919 6.09981 6.94355 5.89423 7.29001 5.76001C8.83902 5.44599 10.4228 5.33839 12 5.44001C13.5806 5.33856 15.1676 5.44616 16.72 5.76001C17.064 5.89579 17.3763 6.10076 17.6378 6.36223C17.8993 6.62369 18.1042 6.93608 18.24 7.28001C18.66 8.34001 18.56 10.84 18.56 12C18.56 13.16 18.66 15.67 18.24 16.72V16.73Z"/></svg></span></a></li>
+                            <li><a href="#"><span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"/></svg></span></a></li>
+                            <li><a href="#"><span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"/><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"/></svg></span></a></li>
+                            <li><a href="#"><span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"/></svg></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   
+    <section class="magic-section js-scroll">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1></h1>
+                    <div class="magic-links">
+                        <a href="">100% <br>
+                            Cruelty free</a>
+                        <a href="">No <br>
+                            Chemicals</a>
+                        <a href="">Handmade <br>
+                            with love</a>
+                        <a href="">No <br>
+                            Chemicals</a>
+                        <a href="">Handmade <br>
+                            with love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center pd-description">
+                <div class="col-md-7 ">
+                    <h2 class="sec-hd">What's Inside</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="slideIn-btn" href="#">Read More</a>
+                </div>
+                <div class="col-md-4 offset-md-1 details-img">
+                    <img src="images/diya.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-review">
+        <div>
+            <h1 class="sec-hd">Voice of the people</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 owl-carousel review-slider">
+                    <div class="review">
+                        <div class="rating">
+                           <img src="images/4star.png">
+                        </div>
+                        <figure class="box-1">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                        </figure>
+                        <span class="box-name-1">Name Surname</span>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            <img src="images/4star.png">
+                        </div>
+                        <figure class="box-2">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+                            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                        </figure>
+                        <span class="box-name-2">Name Surname</span>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            <img src="images/4star.png">
+                        </div>
+                        <figure class="box-3">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+                            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                        </figure>
+                        <span class="box-name-3">Name Surname</span>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            <img src="images/4star.png">
+                        </div>
+                        <figure class="box-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                        </figure>
+                        <span class="box-name-4">Name Surname</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-forms">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="btn btn-outline-primary btn-block btn-review" id="btn-review-1">Write us review <span></span></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-outline-primary btn-block btn-que" id="btn-que-1">Ask a Question <span></span></button>
+                </div>
+                <div class="col-12 form-container" id="form-container-1">
+                    <form action="">
+                        <div class="rating">
+                            <label for="">Rating</label>
+                            <div>
+                                <img src="images/5star.png">
+                            </div>
+                        </div>
+                        <div class="row form-input-field">
+                            <div class="col-md-6 col-12">
+                                <label>Name</label>
+                                <input type="text" name="" value="" class="input-field">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <label>Email</label>
+                                <input type="text" name="" value="" class="input-field">
+                            </div>
+                        </div>
+                        <div class="row form-input-field">
+                            <div class="col-md-6 col-12">
+                                <label>Title</label>
+                                <input type="text" name="" value="" class="input-field">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <label>Upload</label>
+                                <input type="text" name="" value="" class="input-field">
+                            </div>
+                        </div>
+                        <div class="row form-input-field">
+                            <div class="col-12">
+                                <textarea name="" id="" cols="15" rows="10"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <input type="submit" class="btn btn-primary input-btn" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-forms">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-12 form-container" id="form-container-2">
+                    <form action="">
+                        
+                        <div class="row form-input-field">
+                            <div class="col-md-6 col-12">
+                                <label>Name</label>
+                                <input type="text" name="" value="" class="input-field">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <label>Email</label>
+                                <input type="text" name="" value="" class="input-field">
+                            </div>
+                        </div>
+                        
+                        <div class="row form-input-field">
+                            <div class="col-12">
+                                <textarea name="" id="" cols="15" rows="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard
+                                </textarea>
+                            </div>
+                            <div class="col-12">
+                                <input type="submit" class="btn btn-primary input-btn" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-forms">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="btn btn-outline-primary btn-block btn-review" id="btn-review-2">Reviews <span></span></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-outline-primary btn-block btn-que" id="btn-que-2">Questions <span></span></button>
+                </div>
+                <div class="col-12 form-container form-bottom-ele" id="form-container-3">
+                    <form action="">
+                        <div class="rating">
+                            <label for="">Name SurName</label>
+                            <div>
+                                <img src="images/5star.png">
+                            </div>
+                        </div>
+                        <div class="row form-input-field">
+                            <div class="col-md-3 col-12">
+                                <figure><img src="images/thumb2.jpg" alt=""></figure>
+                            </div>
+                           
+                            <div class="col-md-9">
+                                <p class="review-que-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <label for="">Name SurName</label>
+                            <div>
+                                <img src="images/5star.png">
+                            </div>
+                        </div>
+                        <div class="row form-input-field">
+                            <div class="col-md-3 col-12">
+                                <figure><img src="images/thumb2.jpg" alt=""></figure>
+                            </div>
+                           
+                            <div class="col-md-9">
+                                <p class="review-que-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <div class="extrareview" style="display: none;">
+                            <div class="rating">
+                                <label for="">Name SurName</label>
+                                <div>
+                                    <img src="images/5star.png">
+                                </div>
+                            </div>
+                            <div class="row form-input-field">
+                                <div class="col-md-3 col-12">
+                                    <figure><img src="images/thumb2.jpg" alt=""></figure>
+                                </div>
+                               
+                                <div class="col-md-9">
+                                    <p class="review-que-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <label for="">Name SurName</label>
+                                <div>
+                                    <img src="images/5star.png">
+                                </div>
+                            </div>
+                            <div class="row form-input-field">
+                                <div class="col-md-3 col-12">
+                                    <figure><img src="images/thumb2.jpg" alt=""></figure>
+                                </div>
+                               
+                                <div class="col-md-9">
+                                    <p class="review-que-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img src="images/form-down.png" class="formdown">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-forms">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-12 form-container form-bottom-ele" id="form-container-4">
+                    <div class="row">
+                        <div class="col-12 review-des">
+                            <p class="person-name">Mehul Patel</p>
+                            <div class="review-date">09/09/2021</div>
+                           
+                        </div>
+                        <div class="col-12">
+                            <h4>Is this product worth to buy</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                            scrambled it to make a type specimen book.</p>
+                        </div>
+                       
+                    </div>
+                    <div class="row">
+                        <div class="col-12 review-des">
+                            <p class="person-name">Mehul Patel</p>
+                            <div class="review-date">09/09/2021</div>
+                           
+                        </div>
+                        <div class="col-12">
+                            <h4>Is this product worth to buy</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                            scrambled it to make a type specimen book.</p>
+                        </div>
+                       
+                    </div>
+                    <div class="extrareviewqty" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 review-des">
+                                <p class="person-name">Mehul Patel</p>
+                                <div class="review-date">09/09/2021</div>
+                               
+                            </div>
+                            <div class="col-12">
+                                <h4>Is this product worth to buy</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                                scrambled it to make a type specimen book.</p>
+                            </div>
+                           
+                        </div>
+                        <div class="row">
+                            <div class="col-12 review-des">
+                                <p class="person-name">Mehul Patel</p>
+                                <div class="review-date">09/09/2021</div>
+                               
+                            </div>
+                            <div class="col-12">
+                                <h4>Is this product worth to buy</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                                scrambled it to make a type specimen book.</p>
+                            </div>
+                           
+                        </div>
+                        </div>
+                        <img src="images/form-down.png" class="formdownqty">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-shopfor">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h1 class="sec-hd">We think you will like these too...</h1>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="shopfor">
+                        <figure><img src="images/thumb1.jpg" alt=""></figure>
+                        <h4>panchgavya diya</h4>
+                        <div class="price">₹ 800/-</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shopfor">
+                        <figure><img src="images/thumb1.jpg" alt=""></figure>
+                        <h4>panchgavya diya</h4>
+                        <div class="price">₹ 800/-</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shopfor">
+                        <figure><img src="images/thumb1.jpg" alt=""></figure>
+                        <h4>panchgavya diya</h4>
+                        <div class="price">₹ 800/-</div>
+                        
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-el">
+            <img src="images/tree1.svg" alt="">
+            <img src="images/trees2.svg" alt="">
+        </div>
+    </section>
+    <section class="home-world js-scroll">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="sec-hd">WORLD OF NANDI</h2>
+                </div>
+                <div class="col-md-4 col-10 has-hover">
+                    <div class="card">
+                        <div class="card-front" style="background-image: url(images/mind.jpg);">
+                            <span>MIND</span>
+                        </div>
+                        <div class="card-back" style="background-image: url(images/mind.jpg);">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-10 has-hover">
+                    <div class="card">
+                        <div class="card-front" style="background-image: url(images/body.jpg);">
+                            <span>MIND</span>
+                        </div>
+                        <div class="card-back" style="background-image: url(images/body.jpg);">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-10 has-hover">
+                    <div class="card">
+                        <div class="card-front" style="background-image: url(images/soul.jpg);">
+                            <span>MIND</span>
+                        </div>
+                        <div class="card-back" style="background-image: url(images/soul.jpg);">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="home-science product-science js-scroll">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 pe-5">
+                    <h4>Ancient <br>
+                        Science of <br>
+                        PANCHGAVYA</h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+                    <a class="slideIn-btn" href="#">Read More</a>
+                </div>
+                <div class="col-md-6 text-end science-img">
+                    <img width="80%" src="images/squre-nandi.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-el">
+            <img src="images/tree22.svg" alt="">
+            <!-- <img src="images/tree3.svg" alt=""> -->
+            <img src="images/tree2-right.svg" alt="">
+        </div>
+    </section>
+    <section class="home-strip">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-12">
+                    <h3>Earn with NANDI</h3>
+                </div>
+                <div class="col-md-4 col-12 text-center has-img">
+                    <img src="images/round-nandi.png" alt="">
+                </div>
+                <div class="col-md-4 col-12 text-md-end">
+                    <a class="strip-btn" href="#">Click to Inquire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-faq js-scroll">
+        <div class="container">
+            <div class="row">
+                    <div class="col-12">
+                        <h2 class="sec-hd">FAQ</h2>
+                    </div>
+                    <div class="col-12">
+                        <div class="faq-questions">
+                            <div class="faq-block">
+                                <p class="faq-q">How many questions should a FAQ have?</p>
+                                <div class="faq-ans" style="overflow: hidden; display: none;">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text</p>
+                                </div>
+                            </div>
+                            <div class="faq-block">
+                                <p class="faq-q">How do you create a FAQ?</p>
+                                <div class="faq-ans" style="overflow: hidden; display: none;">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text</p>
+                                </div>
+                            </div>
+                            <div class="faq-block">
+                                <p class="faq-q">What questions do customers ask?</p>
+                                <div class="faq-ans" style="overflow: hidden; display: none;">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text</p>
+                                </div>
+                            </div>
+                            <div class="faq-block">
+                                <p class="faq-q">What does an FAQ look like?</p>
+                                <div class="faq-ans" style="overflow: hidden; display: none;">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text</p>
+                                </div>
+                            </div>
+                            <div class="faq-block">
+                                <p class="faq-q">What FAQ Means?</p>
+                                <div class="faq-ans" style="overflow: hidden; display: none;">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                       Lorem Ipsum has been the industry's standard dummy text</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+        </div>
+
+    </section>
+    
+    <section class="home-strip">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-12">
+                    <h3>Earn with NANDI</h3>
+                </div>
+                <div class="col-md-4 col-12 text-center has-img">
+                    <img src="images/round-nandi.png" alt="">
+                </div>
+                <div class="col-md-4 col-12 text-md-end">
+                    <a class="strip-btn" href="#">Click to Inquire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-info">
+                    <h3>Our Story</h3>
+                    <div class="footer-collaps">
+                        <p>Nandi Panchgavya is a business cum social venture that promotes
+                        Panchgavya products made from cows dung, urine, milk, ghee and curd.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Quick links</h3>
+                    <div class="footer-collaps">
+                        <a href="#">Terms of use</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Purchases, Payments and Returns</a>
+                        <a href="#">Frequently asked questions</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Shop Category</h3>
+                    <div class="footer-collaps">
+                        <a href="#">Panchgavya</a>
+                        <a href="#">Earn with Nandi</a>
+                        <a href="#">Subscriptions</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h3>Useful Links</h3>
+                    <div class="footer-collaps">
+                        <a href="#">Blog</a>
+                        <a href="#">Impact</a>
+                        <a href="#">Video</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-social-media">
+                        <a href="#"><img src="images/insta.svg"></a>
+                        <a href="#"><img src="images/fb.svg"></a>
+                        <a href="#"><img src="images/in.svg"></a>
+                        <a href="#"><img src="images/wa.svg"></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+
+// Sticky Header JS Starts
+if (jQuery(window).width() > 0) {
+    jQuery(window).scroll(function() {
+        var scroll = jQuery(window).scrollTop();
+        if (scroll >= 20) {
+            jQuery("header").addClass("sticky");
+        } else {
+            jQuery("header").removeClass("sticky");
+        }
+    });
+}
+    jQuery(".faq-q").click(function() {
+      jQuery(this).next('.faq-ans').slideToggle();
+      jQuery(this).toggleClass('active');
+  });
+
+    $(document).ready(function() {
+        var owl = $('.mentors-carousel');
+        owl.owlCarousel({
+            margin: 5,
+            nav: false,
+            loop: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                items: 1
+                },
+                600: {
+                items: 3
+                },
+                1000: {
+                items: 3
+                }
+            }
+        });
+
+        var owl = $('.shopfor-carousel');
+        owl.owlCarousel({
+            margin: 30,
+            nav: true,
+            loop: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3,
+                    loop: false,
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+
+        var owl = $('.featured-carousel');
+        owl.owlCarousel({
+            margin: 30,
+            nav: true,
+            loop: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    margin: 10,
+                },
+                768: {
+                    items: 3,
+                    loop: false,
+                    margin: 15
+                },
+                1000: {
+                    items: 3,
+                    margin: 30
+                }
+            }
+        });
+
+        var owl = $('.review-slider');
+        owl.owlCarousel({
+            margin: 30,
+            nav: true,
+            loop: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    margin: 10,
+                },
+                768: {
+                    items: 3,
+                    loop: false,
+                    margin: 15
+                },
+                1000: {
+                    items: 3,
+                    margin: 30
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+
+  <script>
+    var owl = $('.mentors-carousel');
+        owl.owlCarousel({
+            margin: 5,
+            nav: false,
+            loop: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                items: 1
+                },
+                600: {
+                items: 3
+                },
+                1000: {
+                items: 3
+                }
+            }
+        });
+
+        $( document ).ready(function() {
+           var heightall = $(".col-prod").height();
+            $(".col-video").css("height",heightall);
+        });
+
+        $('#video1').hide()
+        $('#video2').hide()
+
+        $(document).ready(function(){
+        $('#col-video1').click(function(){
+            $('#video1').toggle();
+           
+        });
+        $('#close1').click(function(){
+            $('#video1').hide();
+            
+
+        });
+
+        $('#col-video2').click(function(){
+            $('#video2').toggle();
+           
+        });
+        $('#close2').click(function(){
+            $('#video2').hide();
+            
+
+        });
+    });
+ </script>
+
+  <script>
+   
+  $('#form-container-2').hide()
+//   $('#form-container-3').hide()
+  $('#form-container-4').hide()
+  $(document).ready(function(){
+        $('#btn-que-1').click(function(){
+        $('#form-container-2').toggle();
+        $('#form-container-1').hide();
+
+    });
+
+    $('#btn-review-1').click(function(){
+        $('#form-container-1').toggle();
+        $('#form-container-2').hide();
+    });
+
+    $('#btn-que-2').click(function(){
+        $('#form-container-4').toggle();
+        $('#form-container-3').hide();
+
+
+    });
+
+    $('#btn-review-2').click(function(){
+        $('#form-container-3').toggle();
+        $('#form-container-4').hide();
+
+    });
+
+    $('.formdown').click(function(){
+        $('.extrareview').slideToggle(2000);
+    });
+    $('.formdownqty').click(function(){
+        $('.extrareviewqty').slideToggle(2000);
+    });
+
+});
+
+jQuery('.owl-carousel').owlCarousel({
+    // Here goes default configs
+    responsive : {
+      // breakpoint from 0 up
+      0 : {
+        stagePadding: 0,
+        loop: false,
+        responsiveClass: true,
+        dots: false,
+        nav: true,
+        autoHeight: true,
+        items: 1
+      },
+      // breakpoint from 768 up
+      768 : {
+        items: 3
+      }
+    }
+  });
+
+  /* Wishlist Heart jQuery */
+  $(document).ready(function(){
+  $(".wishlist").click(function(){
+    $("svg").toggleClass("fill");
+  });
+});
+    
+
+
+  </script>
+  <style>

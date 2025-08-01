@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php include 'include/head.php';?>
+    <title>Earn Nandi | Wow Nandi</title>
+</head>
+<body>
+    <?php include 'include/header.php';?>
+   
+    <section class="earn-nandi-banner nijal-world-earn js-scroll scrolled pad-200">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12 col-md-6">
+                        <h1>Earn with<br>
+                            NANDI 
+                        </h1>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 thankyou-video">
+                    <img src="images/product-main-1.jpg" width="100%">
+                    <button aria-label="Video Play" data-src="uploads/test-video.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn"><img src="images/video-icon.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="magic-section about-magic-section nworld-magic-section earn-nandi-magic js-scroll scrolled">
+        <div class="container"> 
+            <div class="row">
+                <div class="col">
+                    <h1></h1>
+                    <div class="magic-links">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="earn-nandi-people">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12 col-md-6 pe-md-5">
+                        <h1 class="text-center">RAAHI</h1>
+                        <div class="earn-left-video" id="col-video1" style="height: 400px;">
+                            <img src="images/video-icon.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim, <a class="slideIn-btn " href="#">Read more.</a>
+                            </p>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary">Be a Raahi</button>
+                        
+                </div>
+                <div class="col-lg-6  col-sm-12 col-md-6 ps-md-5">
+                    <h1 class="text-center">SAATHI</h1>
+                    <div class="earn-left-video" id="col-video2" style="height: 400px;">
+                        <img src="images/video-icon.png" alt="">
+                    </div>
+                    <div class="product-details">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim, <a class="slideIn-btn " href="#">Read more.</a>
+                        </p>
+                        
+                        
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary">Be a Saathi</button>
+                </div>
+            </div>
+        </div>
+         <div class="banner-el">
+            <img src="images/trees1.svg" alt="">
+            <img src="images/trees2.svg" alt="">
+        </div>
+        <div class="bottom-el"></div>
+    </section>
+
+    <section class="earn-nandi-product">
+         <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12 col-md-6">
+                    <div class="product-left">
+                            <img src="images/nandi-banner.png" alt="">
+                            <div class="product-details">
+                                <span>500</span>
+                                <p>Cows saved</p>
+                            </div>
+                    </div>                        
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-6">
+                    <div class="product-right">
+                            <img src="images/asset-1-8.png" alt="">
+                            <div class="product-details">
+                                <span>1500</span>
+                                <p>Jobs Generated</p>
+                            </div>
+                    
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-stories about-stories earn-nandi-stories js-scroll">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="sec-hd">Stories of NANDI</h2>
+                </div>
+                <div class="col-md-3 col-6">
+                        <div class="col-video" id="col-video1">
+                            <img src="images/video-icon.png" alt="">
+                        </div>
+                        <div class="video1" id="video1">
+                                <video src="video.mp4" controls="true"></video>
+                                <b class="close" id="close1">Close</b>
+                        </div>
+                    <h3>Name Surname</h3>
+                    <p>Lorem ipsum dolor sit amet,</p> 
+                    <a href="#">Read more...</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div href="#" class="col-prod">
+                        <figure>
+                            <img src="images/thumb1.jpg" alt="">
+                        </figure>
+                    </div>
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet,</p> 
+                        <a href="#">Read more...</a>
+                </div>
+                <div class="col-md-3 col-6">
+                        <div class="col-video" id="col-video2">
+                               <img src="images/video-icon.png" alt="">
+                        </div>
+                        <div class="video2" id="video2">
+                                <video src="video.mp4" controls="true"></video>
+                                <b class="close" id="close2">Close</b>
+                        </div>
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet,</p> 
+                        <a href="#">Read more...</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div href="#" class="col-prod">
+                        <figure>
+                            <img src="images/thumb1.jpg" alt="">
+                        </figure>
+                    </div>
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet,</p> 
+                        <a href="#">Read more...</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-el"></div>
+    </section>
+
+    <section class="nijal-world-earn donation-box-main">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12 col-md-6 donation-box">
+                        <h1 class="sec-hd">Donation Box</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <button type="button" class="btn btn-success">Know More</button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 thankyou-video">
+                    <img src="images/product-main-1.jpg" width="100%">
+                    <button aria-label="Video Play" data-src="uploads/test-video.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn"><img src="images/video-icon.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="earn-nandi-giftbox">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-12">
+                    <h1 class="sec-hd">Gift and EARN</h1>
+                </div>
+                <!-- <div class="col-md-2 col-2"></div> -->
+                <div class="col-md-8 col-lg-8 col-sm-12 offset-lg-2">
+                    <div class="gift-box">
+                        <h3>WHY</h3>
+                        <h3>BENIFITS</h3>
+                    </div>
+                </div>
+                <!-- <div class="col-md-2"></div> -->
+            </div>
+            <div class="row align-items-center">
+                <!-- <div class="col-md-2 col-2"></div> -->
+              
+                <div class="col-md-8 col-lg-8 col-sm-12 offset-lg-2">
+                        <div class="gift-box-detail">
+                                
+                            <p class="pe-md-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, 
+                            consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+                            <p class="ps-md-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, 
+                                consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        </div>
+                                
+                    </div>
+                
+                <!-- <div class="col-md-2 col-2"></div> -->
+            </div>
+            <div class="giftandearnbtn">
+                <button type="button" class="btn btn-success">Know More</button>                        
+            </div>
+        </div>
+    </section>
+   
+    <section class="magic-section about-magic-section nworld-magic-section earn-nandi-magic-1 js-scroll">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1></h1>
+                    <div class="magic-links">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="story-of-nandi-panchgavya">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- <div class="col-2 col-md-2"> -->
+                    
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-12 offset-lg-2">
+                    <h1 class="sec-hd">Story of Nandi Panchgavya</h1>
+                    <div class="story-of-nandi-panchgavya-detail">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer 
+                        dipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                    <button type="button" class="btn btn-success">Know More</button>                        
+                
+                </div>
+                <!-- <div class="col-2 col-md-2"> -->
+                    
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    
+
+    <section class="home-strip nijal-world-strip earn-nandi-strip strip-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Join the NANDI MOVMENT</h3>
+                </div>
+                <div class="col-md-4 text-center has-img">
+                    <img src="images/round-nandi.png" alt="">
+                </div>
+                <div class="col-md-4 text-md-center">
+                    <a class="strip-btn" href="#">Click to Inquire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <?php include 'include/footer.php';?>
+
+    <!--Video Modal -->
+    <div id="videoPlaypopup" class="wl-modal wl-modal-lg wl-video-modal">
+        <div class="wl-modal-content">
+            <span class="wl-m-close">&times;</span>
+            <div class="wl-modal-body">
+                <video autoplay controls>
+                    <source src="/">
+                </video>
+            </div>
+        </div>
+    </div>
+
+  <script>
+    var owl = $('.mentors-carousel');
+        owl.owlCarousel({
+            margin: 5,
+            nav: false,
+            loop: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                items: 1
+                },
+                600: {
+                items: 3
+                },
+                1000: {
+                items: 3
+                }
+            }
+        });
+
+        $( document ).ready(function() {
+           var heightall = $(".col-prod").height();
+            $(".col-video").css("height",heightall);
+
+            var gifthh = $(".gift-box-detail").height();
+            $("..earn-nandi-giftbox .gift-box::after").css("height",gifthh+406);
+        });
+
+        $('#video1').hide()
+        $('#video2').hide()
+
+        $(document).ready(function(){
+        $('#col-video1').click(function(){
+            $('#video1').toggle();
+           
+        });
+        $('#close1').click(function(){
+            $('#video1').hide();
+            
+
+        });
+
+        $('#col-video2').click(function(){
+            $('#video2').toggle();
+           
+        });
+        $('#close2').click(function(){
+            $('#video2').hide();
+            
+
+        });
+    });
+
+    // video popup script
+    // Video Play Button
+if ($(".wl-modal-btn").length > 0) {
+    $(".wl-modal-btn").click(function() {
+        var modalPopup = $(this).attr("data-modal");
+        $(".wl-modal").removeClass("wl-modal-open");
+        $("#" + modalPopup).addClass("wl-modal-open");
+        $("body").addClass("wl-modal-active");
+    });
+    $(".wl-modal .wl-m-close").click(function() {
+        $(".wl-modal").removeClass("wl-modal-open");
+        $("body").removeClass("wl-modal-active");
+        $(".video-play-box").removeClass("video-play");
+    });
+    $(".wl-modal").click(function(m) {
+        if ($(m.target).is(".wl-modal-open")) {
+            $(".wl-modal").removeClass("wl-modal-open");
+            $("body").removeClass("wl-modal-active");
+            $(".video-play-box").removeClass("video-play");
+        }
+    });
+    document.addEventListener("keydown", function(event) {
+        const key = event.key;
+        if (key === "Escape") {
+            $(".wl-modal").removeClass("wl-modal-open");
+            $("body").removeClass("wl-modal-active");
+        }
+    });
+}
+// Video Popup
+if ($("#videoPlaypopup").length > 0) {
+    $("#videoPlaypopup").each(function() {
+        var playBtn2 = $(".video-play-btn");
+        var vBox2 = $(".wl-video-modal");
+        var vPlay2 = $(".video-play-box");
+
+        var Video2 = $(this).find("video");
+        var Source2 = $(this).find("source");
+        var playStopBtn2 = $(this).find("button") && $(vBox2);
+
+        playBtn2.click(function() {
+            var vPath2 = $(this).attr("data-src");
+            Video2.trigger("load");
+            Video2.trigger("play");
+            vBox2.find(Source2).attr("src", vPath2);
+        });
+
+        playStopBtn2.click(function() {
+            Source2.attr("src", "/");
+            Video2.trigger("pause");
+            vBox2.removeClass("wl-modal-open");
+            $("body").removeClass("modal-open");
+        });
+
+        Video2.click(function() {
+            event.stopPropagation();
+        });
+
+        Video2.on("ended", function() {
+            Source2.attr("src", "/");
+            Video2.trigger("pause");
+            vBox2.removeClass("wl-modal-open");
+            vPlay2.removeClass("video-play");
+            $("body").removeClass("modal-open");
+        });
+
+        $(document).on("keydown", function(event) {
+            if (event.key === "Escape") {
+                Source2.attr("src", "/");
+                Video2.trigger("pause");
+                vPlay2.removeClass("video-play");
+            }
+        });
+    });
+}
+// video popup script ends
+ </script>
+</body>
+</html>

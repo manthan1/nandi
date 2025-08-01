@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'AinslieSans-NorReg';
+  src: local('☞AinslieSans-NorBol'), local('AinslieSans-NorBol'),
+      url('../fonts/AinslieSans-NorBol.woff2') format('woff2'),
+      url('../fonts/AinslieSans-NorBol.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AinslieSans-NorReg';
+  src: local('☞AinslieSans-NorReg'), local('AinslieSans-NorReg'),
+      url('../fonts/AinslieSans-NorReg.woff2') format('woff2'),
+      url('../fonts/AinslieSans-NorReg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SHREE-ENG-0487';
+  src: local('SHREE-ENG-0487'),
+      url('../fonts/SHREE-ENG-0487.woff2') format('woff2'),
+      url('../fonts/SHREE-ENG-0487.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

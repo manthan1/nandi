@@ -1,0 +1,3015 @@
+
+/* Saathi Page */
+.saathi-box.home-science{
+    h4{
+        font-weight: 600;
+        font-size: 35px;
+        font-family: "AinslieSans-NorReg";
+        text-transform: uppercase;
+        @include max-width (1399px){
+            font-size: 30px;
+        }
+        @include max-width (1399px){
+            font-size: 26px;
+        }
+    }
+    .pt-md-5{
+        @include max-width (767px){
+            flex-direction: column-reverse;
+        }
+    }
+}
+.saathi-banner{
+    background: #246fba;
+    @include max-width (767px){
+        background: #246fba;
+    }
+    .carousel-inner > .item {
+        .row{
+            > div:nth-child(2){
+                @include max-width (767px){
+                    text-align: center;
+                    margin: 30px 0 20px;
+                    img{
+                        float: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.saathi-box{
+    &::before{
+        background: none;
+    }
+    &::after{
+        background: none;
+    }
+    @include max-width (767px){
+        padding: 0 0 40px;
+    }
+    h2{
+        margin-bottom: 80px;
+        color: #246fba;
+        @include max-width (767px){
+            margin:50px 0 30px;
+            font-size: 32px;
+            color: #246fba;
+        }
+    }
+    .sec-hd.mob{
+        display: none;
+        @include max-width (767px){
+            display: block;
+        }
+    }
+    .sec-hd.desk{
+        @include max-width (767px){
+            display: none;
+        }
+    }
+    .science-img-1{
+        text-align: center;
+        position: relative;
+        z-index: 0;
+        &::after{
+            
+            background: #246fba;
+            position: absolute;
+            z-index: -1;
+            @include max-width (991px){
+                width: 1000px;
+                left: auto;
+            }
+            @include max-width (767px){
+                background: #246fba;
+            }
+        }
+        @include max-width (767px){
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+    }
+    .science-img{
+        position: relative;
+        text-align: center !important;
+        z-index: 0;
+        &::after{
+            background: #246fba;
+            position: absolute;
+            z-index: -1;
+            @include max-width (991px){
+                width: 1000px;
+                right: auto;
+            }
+            @include max-width (767px){
+                background: #246fba;
+            }
+        }
+        @include max-width (767px){
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+    }
+    .raahi-right-des{
+        padding: 0 100px;
+        @include max-width (1199px){
+            padding: 0 40px;
+        }
+        @include max-width (991px){
+            padding: 0 10px;
+        }
+        h4{
+            color: #246fba;
+            @include max-width (767px){
+                color: #246fba;
+            }
+        }
+        p{
+            margin-bottom: 30px;
+            a{
+                color: $black;
+                font-weight: 600;
+                &:hover{
+                    color:#246fba;
+                }
+            }
+            @include max-width (1199px){
+                font-size: 22px;
+            }
+        }
+        .raahi-btn
+        {
+            display: inline-block;
+            margin-top: 10px;
+            @include max-width (767px){
+                margin-top: 0px;
+            }
+            a{
+                font-size: 23px;
+                background: #246fba; 
+                border-radius: 30px;
+                padding: 15px 50px;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 400;
+                &:hover{
+                    background: #873d89;
+                }
+                @include max-width (767px){
+                    background: #246fba;
+                    font-size: 20px;
+                    padding: 10px 50px;
+                }
+            }
+        }
+      
+
+    }
+}
+.mlm-mod {
+    .sec-hd{
+        color: #822880;
+    }
+}
+.saathi-donation-box{
+    padding: 50px 0 100px;
+    background: #246fba;
+    color: $colorBeta; 
+    .donationbox-step-img{
+        position: relative;
+        text-align: left;
+            &::after{
+                content: "";
+                background: url(../../images/werwer.png) center;
+                background-size: cover;
+                position: absolute;
+                width: 650px;
+                height: 600px;
+                left: -90px;
+                top: -75px;
+                @include max-width (1399px){
+                    width: 560px;
+                    height: 520px;
+                    left: -90px;
+                    top: -70px;
+                }
+                @include max-width (1199px){
+                    width: 480px;
+                    height: 460px;
+                    left: -80px;
+                }
+                @include max-width (991px){
+                    width: 320px;
+                    height: 300px;
+                    left: -37px;
+                    top: -35px;
+                }
+                @include max-width (767px){
+                    width: 480px;
+                    height: 440px;
+                    left: -50px;
+                    top: -45px;
+                }
+                @include max-width (575px){
+                    width: 420px;
+                    height: 380px;
+                    left: -45px;
+                    top: -34px;
+                }
+                @include max-width (479px){
+                    width: 318px;
+                    height: 290px;
+                }
+                @include max-width (359px){
+                    width: 278px;
+                    height: 262px;
+                }
+            }
+
+    }
+    .img-left{
+        position: relative;
+        margin-top: 50px;
+        .donationbox-step-list{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            cursor: pointer;
+            text-transform: uppercase;
+            color: #f9d438;
+            #step1{
+                position: absolute;
+                top: -15px;
+                right: 150px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    top: -25px;
+                    right: 140px;
+                }
+                @include max-width (1199px){
+                    right: 100px;
+                }
+                @include max-width (991px){
+                    right: 70px;
+                    top: -9px;
+                }
+                @include max-width (767px){
+                    right: 120px;
+                    top: -5px;
+                }
+                @include max-width (575px){
+                    right: 85px;
+                    top: -2px;
+                }
+                @include max-width (479px){
+                    right: 65px;
+                    top: -13px;
+                }
+                @include max-width (359px){
+                    right: 35px;
+                }
+            }
+            #step2{
+                position: absolute;
+                right: 50px;
+                top: 130px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    top: 105px;
+                }
+                @include max-width (1199px){
+                    top: 84px;
+                    right: 25px;
+                }
+                @include max-width (991px){
+                    right: 17px;
+                    top: 64px;
+                }
+                @include max-width (767px){
+                    right: 47px;
+                    top: 104px;
+                }
+                @include max-width (575px){
+                    right: 17px;
+                    top: 93px;
+                }
+                @include max-width (479px){
+                    top: 60px;
+                }
+                @include max-width (359px){
+                    top: 50px;
+                    right: -10px;
+                }
+            }
+            #step3{
+                position: absolute;
+                right: 50px;
+                bottom: -330px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    bottom: -280px;
+                }
+                @include max-width (1199px){
+                    bottom: -241px;
+                    right: 25px;
+                }
+                @include max-width (991px){
+                    right: 17px;
+                    bottom: -169px;
+                }
+                @include max-width (767px){
+                    right: 45px;
+                    bottom: -251px;
+                }
+                @include max-width (575px){
+                    right: 17px;
+                    bottom: -225px
+                }
+                @include max-width (479px){
+                    bottom: -165px;
+                }
+                @include max-width (359px){
+                    bottom: -145px;
+                    right: -10px;
+                }
+            }
+            #step4{
+                position: absolute;
+                right: 150px;
+                bottom: -470px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    bottom: -398px;
+                    right: 134px;
+                }
+                @include max-width (1199px){
+                    bottom: -341px;
+                    right: 95px;
+                }
+                @include max-width (991px){
+                    right: 65px;
+                    bottom: -236px;
+                }
+                @include max-width (767px){
+                    right: 120px;
+                    bottom: -350px;
+                }
+                @include max-width (575px){
+                    right: 80px;
+                    bottom: -311px
+                }
+                @include max-width (479px){
+                    right: 60px;
+                    bottom: -230px;
+                }
+                @include max-width (359px){
+                    right: 30px;
+                    bottom: -205px;
+                }
+            }
+        }
+    }
+    .setpall{
+       color: $white;
+        .strip-btn{
+            a{
+                background: #fbb117;
+                &:hover{
+                    background: $secondary;
+                    color: $white;
+                }
+            }
+            
+
+        }
+    }
+}
+.donationbox-whatget{
+    h3{
+        &::after{
+            background: $colorBeta;
+        }
+    }
+    a{
+        &::after{
+            background: $colorBeta;
+        }
+    }
+}
+.donationbox-whatget.membership.saathi-cal {
+    h3{
+        &::after{
+            background:#246fba;
+        }
+    }
+    a{
+        &::after{
+            background: #246fba;
+        }
+    }
+}
+.saathi-strip{
+    padding: 30px 0;
+    .strip-btn{
+        background: #246fba;;
+        color: $white;
+        padding: 15px 80px;
+    }
+}
+.home-strip.saathi-strip{
+.strip-btn{
+    @include max-width (767px){
+        font-size: 14px;
+        padding: 5px 14px !important;
+        margin: 2px 0 0 0;
+        display: inline-block;
+    }
+}
+}
+.saathi-know{
+    padding: 150px 0;
+    background: #fff;
+    @include max-width (991px){
+        padding: 40px 0;
+    }
+    @include max-width (767px){
+        background: transparent;
+    }
+    h2{
+        color: #246fba;;
+        @include max-width (767px){
+            color: #246fba;
+        }
+    }
+    .saathi-know-tbl{
+        padding: 0 120px;
+        text-align: center;
+        margin-top: 0px;
+        @include max-width (1199px){
+            margin-top: -40px;
+        }
+        @include max-width (991px){
+            margin-top:0px;
+        }
+        @include max-width (767px){
+            padding: 0;
+        }
+        thead{
+            tr{
+                th{
+                    color: $white;
+                    font-size: 32px;
+                    padding: 20px 0;
+                    width: 33.33%;
+                    background: #246fba;
+                    border-right: 5px solid #fff;
+                    border-bottom: 5px solid #fff;
+                    @include max-width (1199px){
+                        font-size: 26px;
+                    }
+                    @include max-width (991px){
+                        font-size: 20px;
+                    }
+                    @include max-width (479px){
+                        font-size: 16px;
+                    }
+                }
+                th.mob{
+                    display: table-cell;
+                }
+                th.bg-none{
+                    background: transparent;
+                }
+                th.bor-top-left,.bor-top-right{
+                    border-top-left-radius: 50px;
+                    border-top-right-radius: 50px;
+                    @include max-width (479px){
+                        border-top-left-radius: 30px;
+                        border-top-right-radius: 30px;
+                    }
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    color: $white;
+                    font-size: 32px;
+                    text-transform: uppercase;
+                    padding: 20px 0;
+                    background: #246fba;
+                    border: 0;
+                    border-left: 5px solid #fff;
+                    vertical-align: middle;
+                    @include max-width (1199px){
+                        font-size: 26px;
+                    }
+                    @include max-width (991px){
+                        font-size: 20px;
+                    }
+                    @include max-width (767px){
+                        border: 0;
+                    }
+                    @include max-width (479px){
+                        font-size: 16px;
+                    }
+                }
+                td.mob{
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+            tr.mob{
+                display: table-row;
+                border-top: 5px solid #fff;
+                vertical-align: middle;
+                td.bor-bottom-left,td.bor-bottom-right{
+                    border-bottom-left-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    @include max-width (479px){
+                        border-bottom-left-radius: 30px;
+                        border-bottom-right-radius: 30px;
+                    }
+                    a{
+                        color: #fff;
+                        &:hover{
+                            color: #f3ce2c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.meet-saathi{
+    position: relative;
+    h2{
+        color: $colorBeta;
+        margin-bottom: 50px;
+        @include max-width (767px){
+            position: relative;
+            color: #fff;
+            padding: 20px 0;
+            z-index: 0;
+            &:before{
+                position: absolute;
+                content: '';
+                background: #246fba;
+                top: 0;
+                bottom: 0;
+                left: -30%;
+                width: 1000px;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
+    h3{
+        &::after{
+            background: $colorBeta;
+        }
+    }
+    a{
+        &::after{
+            background: $colorBeta;
+        }
+    }
+    .bottom-el
+    {
+       
+        &::after
+        {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            left: 0;
+            background: url(../../images/repeat-a.jpg) repeat-x left center;
+            background-size: auto 100%;
+            height: 30px;
+        }
+    }
+    
+}
+.meet-saathi.sa-page{
+    h2{
+        color: #246fba;
+    }
+    h3{
+        &::after{
+            background: #246fba;
+        }
+    }
+    .bottom-el{
+        img{
+            @include max-width (767px){
+                display: none;
+            }
+        }
+    }
+}
+@include max-width (767px){
+    .donationbox-stories.meet-saathi  {
+        padding: 0 0 40px !important;
+    }
+}
+.donationbox-whatget {
+    padding: 80px 0 80px;
+    background: url(../../images/product-main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    &:before{
+        position: absolute;
+        content: '';
+        background: rgba(0,0,0,0.5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    @include max-width (767px){
+        padding: 60px 0 60px;
+    }
+    h1{
+        margin-bottom: 0;
+        font-size: 85px;
+        @include max-width (1199px){
+            font-size: 45px;
+        }
+    }
+    p{
+        a{
+            color: $white;
+            &:hover{
+                color: #198E53;
+
+            }
+        }
+        @include max-width (1199px){
+            font-size: 20px;
+        }
+        @include max-width (767px){
+            margin-bottom: 0;
+        }
+    }
+    img.get-img{
+        position:relative;
+        max-height: 103px;
+        margin-bottom: 20px;
+        @include max-width (767px){
+            margin-bottom: 0;
+            max-width: 90px;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    @include max-width (767px){
+        .get-box {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+            gap: 20px;
+            .get-desc {
+                text-align: left;
+            }
+            a{
+                margin: initial;
+                font-size: 20px;
+            }
+            h3{
+                &:after{
+                    margin: 8px 0;
+                }
+            }
+        }
+    }
+    .banner-video{
+        @include max-width (767px){
+            margin-top: 50px;
+        }
+        button{
+            background: transparent;
+            border: 0;
+            margin-top: 20px;
+            @include max-width (767px){
+                margin-top: 0;
+            }
+            img {
+                @include max-width (1280px){
+                    width: 100px;
+                    height: 100px;
+                }
+                @include max-width (1199px){
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
+.home-strip.saathi-strip{
+    .has-img {
+        @include max-width (991px){
+            right: 0;
+            left: auto;
+            z-index: -1;
+            img{
+                @include max-width (767px){
+                    right: var(--bs-gutter-x);
+                    left: auto;
+                }
+            }
+        }
+    }
+    @include max-width (767px){
+        padding: 8px 160px 10px 0;
+    }
+}
+.donation-opt{
+
+    h2.sec-hd{
+        font-size: 50px;
+        color: #198E53;
+        @include max-width (991px){
+            font-size: 40px;
+        }
+        @include max-width (767px){
+            font-size: 32px;
+        }
+    }
+    .raahibox {
+        background: #198E53;
+        box-shadow: 8px 8px 1px #077237;
+    }
+    .bottom-el{
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -150px;
+            right: 0;
+            left: 0;
+            background: url(../../images/repeat-green.jpg) center;
+            background-size: auto 100%;
+            height: 30px;
+            @include max-width (767px){
+                bottom: auto;
+                top: 60px;
+            }
+        }
+       
+    }
+}
+.donation-box-title{
+    h2.sec-hd{
+        color: #198E53;
+        @include max-width (991px){
+            font-size: 40px;
+        }
+        @include max-width (767px){
+            font-size: 32px;
+        }
+    }
+}
+.donation-box-step {
+    background: #198E53;
+    .donationbox-step-img{
+        position: relative;
+        text-align: left;
+        @include max-width (767px){
+            margin-bottom: 60px;
+        }
+        @include max-width (575px){
+            max-width: 438px;
+            img.banner-img {
+                max-width: 310px;
+            }
+        }
+        @include max-width (479px){
+            max-width: 310px;
+            img.banner-img {
+                max-width: 310px;
+            }
+        }
+        @include max-width (359px){
+            max-width: 278px;
+            img.banner-img {
+                max-width: 278px;
+            }
+        }
+            &::after{
+                content: "";
+                background: url(../../images/werwer.png) center;
+                background-size: cover;
+                position: absolute;
+                width: 650px;
+                height: 600px;
+                left: -90px;
+                top: -75px;
+                @include max-width (1399px){
+                    width: 560px;
+                    height: 520px;
+                    left: -90px;
+                    top: -70px;
+                }
+                @include max-width (1199px){
+                    width: 480px;
+                    height: 460px;
+                    left: -80px;
+                }
+                @include max-width (991px){
+                    width: 320px;
+                    height: 300px;
+                    left: -37px;
+                    top: -35px;
+                }
+                @include max-width (767px){
+                    width: 480px;
+                    height: 440px;
+                    left: -50px;
+                    top: -45px;
+                }
+                @include max-width (575px){
+                    width: 420px;
+                    height: 380px;
+                    left: -45px;
+                    top: -34px;
+                }
+                @include max-width (479px){
+                    width: 318px;
+                    height: 290px;
+                }
+                @include max-width (359px){
+                    width: 278px;
+                    height: 262px;
+                }
+            }
+    }
+    .img-left{
+        position: relative;
+        margin-top: 50px;
+        .donationbox-step-list{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            cursor: pointer;
+            text-transform: uppercase;
+            color: #f3ce2c;
+            @include max-width (991px){
+                font-size: 20px;
+                line-height: 1.3;
+            }
+            @include max-width (575px){
+                max-width: 438px;
+            }
+            @include max-width (479px){
+                max-width: 340px;
+            }
+            @include max-width (359px){
+                max-width: 278px;
+            }
+            #step1{
+                position: absolute;
+                top: -15px;
+                right: 150px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    top: -25px;
+                    right: 140px;
+                }
+                @include max-width (1199px){
+                    right: 100px;
+                }
+                @include max-width (991px){
+                    right: 70px;
+                    top: -9px;
+                }
+                @include max-width (767px){
+                    right: 120px;
+                    top: -5px;
+                }
+                @include max-width (575px){
+                    right: 85px;
+                    top: -2px;
+                }
+                @include max-width (479px){
+                    right: 65px;
+                    top: -13px;
+                }
+                @include max-width (359px){
+                    right: 35px;
+                }
+            }
+            #step2{
+                position: absolute;
+                right: 50px;
+                top: 130px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    top: 105px;
+                }
+                @include max-width (1199px){
+                    top: 84px;
+                    right: 25px;
+                }
+                @include max-width (991px){
+                    right: 17px;
+                    top: 64px;
+                }
+                @include max-width (767px){
+                    right: 47px;
+                    top: 104px;
+                }
+                @include max-width (575px){
+                    right: 17px;
+                    top: 93px;
+                }
+                @include max-width (479px){
+                    top: 60px;
+                }
+                @include max-width (359px){
+                    top: 50px;
+                    right: -10px;
+                }
+            }
+            #step3{
+                position: absolute;
+                right: 50px;
+                bottom: -330px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    bottom: -280px;
+                }
+                @include max-width (1199px){
+                    bottom: -241px;
+                    right: 25px;
+                }
+                @include max-width (991px){
+                    right: 17px;
+                    bottom: -169px;
+                }
+                @include max-width (767px){
+                    right: 45px;
+                    bottom: -251px;
+                }
+                @include max-width (575px){
+                    right: 17px;
+                    bottom: -225px
+                }
+                @include max-width (479px){
+                    bottom: -165px;
+                }
+                @include max-width (359px){
+                    bottom: -145px;
+                    right: -10px;
+                }
+            }
+            #step4{
+                position: absolute;
+                right: 150px;
+                bottom: -470px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    bottom: -398px;
+                    right: 134px;
+                }
+                @include max-width (1199px){
+                    bottom: -341px;
+                    right: 95px;
+                }
+                @include max-width (991px){
+                    right: 65px;
+                    bottom: -236px;
+                }
+                @include max-width (767px){
+                    right: 120px;
+                    bottom: -350px;
+                }
+                @include max-width (575px){
+                    right: 80px;
+                    bottom: -311px
+                }
+                @include max-width (479px){
+                    right: 60px;
+                    bottom: -230px;
+                }
+                @include max-width (359px){
+                    right: 30px;
+                    bottom: -205px;
+                }
+            }
+        }
+    }
+    .setpall {
+        .strip-btn {
+            
+            a{
+                background: $secondary;
+                color: $black;
+                text-transform: uppercase;
+                &:hover{
+                    background: #873d89;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.donation-box-get{
+    h3{
+        &::after{
+            background: #198E53;
+        }
+    }
+    a{
+        &::after{
+            background: #198E53;
+        }
+    }
+}
+
+/* Donation box page */
+
+.donation-box-video{
+    .container {
+        &:before{
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 0px;
+            bottom: 0px;
+            background: url(../../images/side-img-left-green.png);
+            width: 2%;
+            background-size: 100%;
+            transform: translateX(-100%);
+            @include max-width($md) {
+                display: none;
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: 25px;
+            top: 0px;
+            bottom: 0px;
+            background: url(../../images/side-img-right-green.png) repeat-y;
+            width: 1.7%;
+            background-size: 100%;
+            transform: translateX(100%);
+            @include max-width($md) {
+                display: none;
+            }
+        }
+    }
+    &.scrolled {
+        .container {
+            &:before {
+                animation: slideInLeft 1s ease-in-out 1s forwards;
+            }
+            &:after {
+                animation: slideInRight 1s ease-in-out 1s forwards;
+            }
+        }
+    }
+    h2.sec-hd{
+        color: #198E53;
+        @include max-width (991px){
+            font-size: 40px;
+        }
+        @include max-width (767px){
+            font-size: 32px;
+        }
+    }
+}
+.donation-stories {
+    h2.sec-hd{
+        color: #198E53;
+        margin-bottom: 70px;
+        @include max-width (991px){
+            font-size: 40px;
+        }
+        @include max-width (767px){
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+    }
+    h3{
+        &::after{
+            background: #198E53;
+        }
+    }
+    a{
+        &::after{
+            background: #198E53;
+        }
+    }
+
+}
+
+/* Corporate gifting Page */
+
+.corporate-gift{
+    h1{
+        margin-bottom:0px;
+    }
+}
+.shgifting{
+    padding: 50px 0 50px;
+    background: url(../../images/featured-bg.jpg) center;
+    background-size: 100%;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 80px;
+        width: 130px;
+        height: 130px;
+        background: url(../../images/star.svg) no-repeat;
+        transform: rotate(var(--rotateVal));
+    }
+    h2.sec-hd {
+        margin-bottom: 0;
+        color: #D8931A;
+        font-size: 50px;
+        padding-bottom: 50px;
+        @include max-width (991px){
+            font-size: 40px;
+        }
+        @include max-width (767px){
+            font-size: 32px;
+        }
+    }
+    img {
+        border-radius: 100px;
+        margin-bottom: 15px;
+        width: 70%;
+    } 
+    h3{
+        color: $black;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 30px;
+        margin-top: 10px;
+        &::after{
+            content: "";
+            width: 100px;
+            height: 3px;
+            background: #D8931A;
+            margin: 8px auto;
+            display: table;
+            border-radius: 5px;
+        }
+        @include max-width (1399px){
+            font-size: 28px;
+        }
+        @include max-width (1199px){
+            font-size: 23px;
+        }
+    } 
+    p{
+        color: $black;
+        font-size: 22px;
+        margin-bottom: 0;
+    }  
+    a {
+        display: table;
+        margin: 0px auto 50px;
+        font-weight: 700;
+        color: $black;
+        position: relative;
+        z-index: 2;
+        padding: 2px 12px;
+        &:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            inset: 0 0 0 0;
+            background:#D8931A;
+            z-index: -1;
+            transition: transform .3s ease;
+
+            transform: scaleX(0);
+            transform-origin: bottom right;
+        }
+        &:hover {
+
+            &:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+    .bottom-el{
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            left: 0;
+            background: url(../../images/repeat-orange.jpg) center;
+            background-size: auto 100%;
+            height: 20px;
+        }
+    }
+}
+.how-to-start {
+    padding: 100px 0 100px;
+    background: url(../../images/earn-nandi-banner.jpg) center;
+    background-size: cover;
+    position: relative;
+    color: #D8931A;
+    text-align: center;
+    .donationbox-step-img{
+        position: relative;
+        text-align: left;
+            &::after{
+                content: "";
+                background: url(../../images/step-img-t.png) center;
+                background-size: cover;
+                position: absolute;
+                width: 650px;
+                height: 600px;
+                left: -90px;
+                top: -75px;
+                @include max-width (1399px){
+                    width: 560px;
+                    height: 520px;
+                    left: -90px;
+                    top: -70px;
+                }
+                @include max-width (1199px){
+                    width: 480px;
+                    height: 460px;
+                    left: -80px;
+                }
+                @include max-width (991px){
+                    width: 320px;
+                    height: 300px;
+                    left: -37px;
+                    top: -35px;
+                }
+                @include max-width (767px){
+                    width: 480px;
+                    height: 440px;
+                    left: -50px;
+                    top: -45px;
+                }
+                @include max-width (575px){
+                    width: 420px;
+                    height: 380px;
+                    left: -45px;
+                    top: -34px;
+                }
+                @include max-width (479px){
+                    width: 318px;
+                    height: 290px;
+                }
+                @include max-width (359px){
+                    width: 278px;
+                    height: 262px;
+                }
+            }
+
+    }
+    .img-left{
+        position: relative;
+        margin-top: 50px;
+        .donationbox-step-list{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            cursor: pointer;
+            text-transform: uppercase;
+            color: #077237;
+            @include max-width (991px){
+                font-size: 20px;
+                line-height: 1.3;
+            }
+            @include max-width (575px){
+                max-width: 438px;
+            }
+            @include max-width (479px){
+                max-width: 340px;
+            }
+            @include max-width (359px){
+                max-width: 278px;
+            }
+            #step1{
+                position: absolute;
+                top: -15px;
+                right: 150px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    top: -16px;
+                    right: 135px;
+                }
+                @include max-width (1199px){
+                    top: -19px;
+                    right: 100px;
+                }
+                @include max-width (991px){
+                    right: 70px;
+                    top: -5px;
+                }
+                @include max-width (767px){
+                    right: 120px;
+                    top: 3px;
+                }
+                @include max-width (575px){
+                    right: 85px;
+                    top: 3px;
+                }
+                @include max-width (479px){
+                    right: 65px;
+                    top: -13px;
+                }
+                @include max-width (359px){
+                    right: 35px;
+                }
+            }
+            #step2{
+                position: absolute;
+                right: 50px;
+                top: 136px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    top: 110px;
+                }
+                @include max-width (1199px){
+                    top: 88px;
+                    right: 25px;
+                }
+                @include max-width (991px){
+                    right: 17px;
+                    top: 67px;
+                }
+                @include max-width (767px){
+                    right: 47px;
+                    top: 111px;
+                }
+                @include max-width (575px){
+                    right: 17px;
+                    top: 98px;
+                }
+                @include max-width (479px){
+                    top: 60px;
+                }
+                @include max-width (359px){
+                    top: 50px;
+                    right: -10px;
+                }
+            }
+            #step3{
+                position: absolute;
+                right: 50px;
+                bottom: -335px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    bottom: -287px;
+                }
+                @include max-width (1199px){
+                    bottom: -245px;
+                    right: 25px;
+                }
+                @include max-width (991px){
+                    right: 17px;
+                    bottom: -172px;
+                }
+                @include max-width (767px){
+                    right: 45px;
+                    bottom: -256px;
+                }
+                @include max-width (575px){
+                    right: 17px;
+                    bottom: -228px
+                }
+                @include max-width (479px){
+                    bottom: -165px;
+                }
+                @include max-width (359px){
+                    bottom: -145px;
+                    right: -10px;
+                }
+            }
+            #step4{
+                position: absolute;
+                right: 150px;
+                bottom: -466px;
+                font-weight: 600;
+                @include max-width (1399px){
+                    bottom: -398px;
+                    right: 134px;
+                }
+                @include max-width (1199px){
+                    bottom: -341px;
+                    right: 95px;
+                }
+                @include max-width (991px){
+                    right: 65px;
+                    bottom: -236px;
+                }
+                @include max-width (767px){
+                    right: 120px;
+                    bottom: -353px;
+                }
+                @include max-width (575px){
+                    right: 80px;
+                    bottom: -312px
+                }
+                @include max-width (479px){
+                    right: 60px;
+                    bottom: -230px;
+                }
+                @include max-width (359px){
+                    right: 30px;
+                    bottom: -205px;
+                }
+            }
+        }
+    }
+    .setpall{
+        .strip-btn {
+            a{
+                background-color: #D8931A;
+                &:hover{
+                    background: #198E53;
+                }
+            }
+        }
+
+    } 
+}
+.corporate-member{
+    h3{
+        &::after{
+            background: #D8931A;
+        }
+    }
+    p{
+        font-size: 22px;
+    }
+    a{
+        &::after{
+            background: #D8931A;
+
+        }
+    }
+}
+.corporate-video{
+    background: url(../../images/mantor-bg.jpg) no-repeat center;
+    padding: 50px 0 100px;
+    position: relative;
+    .container {
+        &:before{
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 0px;
+            bottom: 0px;
+            background: url(../../images/side-img-left-orange.png);
+            width: 2%;
+            background-size: 100%;
+            transform: translateX(-100%);
+            @include max-width($md) {
+                display: none;
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: 25px;
+            top: 0px;
+            bottom: 0px;
+            background: url(../../images/side-img-right-orange.png) repeat-y;
+            width: 1.7%;
+            background-size: 100%;
+            transform: translateX(100%);
+            @include max-width($md) {
+                display: none;
+            }
+        }
+    }
+    &.scrolled {
+        .container {
+            &:before {
+                animation: slideInLeft 1s ease-in-out 1s forwards;
+            }
+            &:after {
+                animation: slideInRight 1s ease-in-out 1s forwards;
+            }
+        }
+    }
+    .sec-hd{
+        color: #24a088;
+    }
+}
+.corporate-strip{
+    background: #D8931A;
+    h3{
+        color: $white;
+    }
+    .strip-btn{
+        color: #d8931a;
+    }
+
+}
+.corporate-stories{
+    padding: 150px 0 150px !important;
+    @include max-width (991px){
+        padding: 40px 0 40px !important;
+    }
+    h2.sec-hd {
+        color: #0c7230;
+    }
+    h3{
+        &::after{
+            background: #24a088;
+        }
+    }
+    a{
+        font-size: 22px;
+        &::after{
+            background: #D8931A;
+        }
+    }
+    .bottom-el{
+        padding-bottom: 0;
+        &::after{
+            background: none !important;
+
+        }
+       
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        background: url(../../images/repeat-orange.jpg);
+        background-repeat: repeat;
+        background-size: auto;
+        background-repeat: repeat-x;
+        background-size: contain;
+        width: 100%;
+        height: 20px;
+        bottom: 0;
+        left: 0;
+        display: block;
+        -webkit-animation: none;
+        animation: none;
+        z-index: 1;
+    }
+    .container{
+        &::after,&::before{
+            display: none;
+        }
+    }
+}
+
+/* Personal Detail Page */
+
+.detail-form {
+    padding: 60px 0 50px;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: calc(50% - 50px);
+        height: 100px;
+        background: $colorAlpha;
+        width: 100%;
+       
+    }
+    @include max-width($sm) {
+        padding: 40px 0;
+    }
+    .link-left{
+        a.go-back-arrow{
+            color: $primary;
+            font-weight: 600;
+            font-size: 22px;
+            @include max-width(479px) {
+                font-size: 16px;
+            }
+            @include max-width(359px) {
+                font-size: 12px;
+            }
+        }
+        a.go-back-txt{
+            color: $black;
+            &:hover{
+                color: $colorAlpha;
+            }
+        }
+        
+    }
+    .link-right{
+        text-align: end;
+        a{
+            color: $black;
+            &:hover{
+                color: $colorAlpha;
+            }
+            
+        }
+    }
+    .details{
+        border: 3px solid $colorAlpha;
+        border-radius: 10px;
+        padding: 80px 30px;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+        background: white;
+        @include max-width($sm) {
+            padding: 50px 10px;
+        }
+        label{
+            color: $colorAlpha;;
+            font-weight: 600;
+			width:30%;
+            font-size: 30px;
+            @include max-width(1399px) {
+                font-size: 20px;
+            }
+            @include max-width($sm) {
+                font-size: 18px;
+                vertical-align: middle;
+            }
+            @include max-width(479px) {
+                width: 35%;
+            }
+            @include max-width(359px) {
+                width: 38%;
+            }
+        }
+        .input-box{
+            width: 60%;
+            border-radius: 10px;
+            border: none;
+            background-color: #feefff;
+            padding: 10px 15px ;
+            margin-bottom: 25px;
+            font-size: 20px;
+            color: $primary;
+            @include max-width($sm) {
+                width: 67%;
+            }
+            @include max-width(479px) {
+                width: 62%;
+            }
+            @include max-width(359px) {
+                width: 59%;
+            }
+        }
+        .fileupload{
+            background-color: #feefff;
+            text-align: center;
+            border-radius: 10px;
+            width:60%;
+            display: inline-flex;
+            @include max-width($sm) {
+                width: 67%;
+            }
+            @include max-width(479px) {
+                width: 62%;
+            }
+            @include max-width(359px) {
+                width: 59%;
+                padding: 0 10px;
+            }
+            .file-upload-txt{
+                padding: 80px 0 20px;
+                @include max-width(1399px) {
+                    padding: 40px 0 20px;
+                }
+                @include max-width(1199px) {
+                    padding: 20px 0 20px;
+                }
+                @include max-width($sm) {
+                    padding: 20px 0px;
+                }
+                @include max-width(479px) {
+                    padding: 50px 0 0;
+                }
+                p{
+                    font-size: 16px;
+                    @include max-width($sm) {
+                        font-size: 14px;
+                        padding: 0 10px;
+                    }
+                }
+                .file{
+                    position: relative;
+                   
+                    span{
+                        border: 2px solid $primary;
+                        border-radius: 30px;
+                        padding: 5px 50px;
+                        color: $primary;
+                        @include max-width(1399px) {
+                            padding: 5px 35px;
+                        }
+                        @include max-width(1199px) {
+                            font-size: 20px;
+                        }
+                        @include max-width($sm) {
+                            font-size: 16px;
+                            padding: 5px 20px;
+                        }
+                        @include max-width(359px) {
+                            margin-left: 10px;
+                        }
+                    }
+                    input{
+                        position: absolute;
+                        font-size: 50px;
+                        opacity: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        top: 0;
+                        cursor: pointer;
+                        width: 100%;
+                    }
+                }
+               
+            }
+            img{
+                height: 78%;
+                margin: 20px 10px 0 0;
+                background: white;
+                padding: 20px;
+                @include max-width(1399px) {
+                    height: 75%;
+                }
+                @include max-width(1199px) {
+                    height: 50%;
+                }
+                @include max-width($sm) {
+                    height: 80%;
+                    padding: 10px;
+                    margin: 15px 10px 0 0;
+                }
+                @include max-width(575px) {
+                    height: 60%;
+                }
+                @include max-width(479px) {
+                    height: 80%;
+                }
+            }.per-img{
+                @include max-width(479px) {
+                    height: 70%;
+                }   
+                @include max-width(359px) {
+                    height: 50%;
+                }   
+            }
+        }
+        .fileupload.per-fl{
+            @include max-width(479px) {
+                .file-upload-txt {
+                    padding: 20px 0 10px;
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .radio-btn{
+            .form-check-input{
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+                vertical-align: baseline;
+                border: 2px solid #d13f81;
+                @include max-width($sm) {
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 5px;
+                }
+                            &:checked{
+                                background-color: #d13f81;
+                                border-color: #d13f81;
+                                box-shadow: none;
+    
+                            }
+                            &:checked[type=radio]{
+                                background-image: none;
+                            }
+                }
+            span{
+                font-size: 22px;
+                margin-right: 30px;
+                @include max-width(1399px) {
+                    margin-right: 15px;
+                    font-size: 20px;
+                }
+                @include max-width(1199px) {
+                    margin-right: 5px;
+                }
+                @include max-width($sm) {
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+                
+    
+               }
+           
+        }
+        .per-detail-btn{
+            text-align: center;
+            width: 100%;
+            margin: 50px auto 0;
+            
+            @include max-width($sm) {
+                margin: 30px auto 0;
+            }
+            a{
+                color: $white;
+                background: $colorAlpha;
+                border-radius: 30px;
+                padding: 10px 30px;
+                text-transform: uppercase;
+                &:hover{
+                    background: $primary;
+                }
+                @include max-width(991px) {
+                    font-size: 22px;
+                }
+            }
+        }
+        .mob-order{
+            @include max-width (767px){
+                order: 1;
+            }
+        }
+        .mob-order-2{
+            @include max-width (767px){
+                order: 2;
+                margin-top: 50px;
+            }
+        }
+        .radio-btn{
+            @include max-width (767px){
+                margin-bottom: 25px;
+            }
+        }
+    }
+}.per-dt{
+    padding-bottom: 120px;
+    @include max-width (991px){
+        padding-bottom: 50px;
+    }
+    .radio-btn {
+        >*{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        @include max-width (479px){
+            font-size: 0;
+        }
+        .gen{
+            @include max-width (479px){
+                padding-left: 10px;
+                width: 130px;
+            }
+            @include max-width (359px){
+                padding-left: 15px;
+                width: 135px;
+            }
+        }
+        >label{
+            width: 30%;
+            @include max-width (479px){
+                width: 35%;
+            }
+        }
+    }
+    .fileupload{
+        .file-upload-txt{
+            p{
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+/* Password Page */
+.detail-form{
+    .password{
+        padding: 100px;
+        @include max-width($sm) {
+            padding: 50px 10px;
+            // width: 100%;
+        }
+        label{
+            font-size: 30px;
+            width: 30%;
+            @include max-width(1399px) {
+                font-size: 20px;
+            }
+            @include max-width(991px) {
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+        .input-box {
+            width: 69%;
+            @include max-width(991px) {
+                width: 100%;
+            }
+        }
+        input[type="number"]{
+            -moz-appearance: textfield;
+            appearance: textfield;
+        }
+    }
+    .forgot-pwd{
+        text-align: center;
+        margin: 30px 0 0;
+        p{
+            font-size: 22px;
+            margin-bottom: 0;
+            @include max-width($sm) {
+                font-size: 18px;
+            }
+            a{
+                color: $black;
+                font-size: 28px;
+                &:hover{
+                    color: $colorAlpha;
+                }
+                @include max-width($sm) {
+                    font-size: 22px;
+                    
+                }
+            }
+        }
+    }
+}.pad-120{
+    padding-bottom: 120px;
+    @include max-width(991px) {
+        padding-bottom: 50px;
+    }
+}
+.form-otp{
+    padding: 50px 0;
+    @include max-width($sm) {
+        padding: 0px 0 50px;
+    }
+    .send-otp{
+        label{
+            width: 15%;
+            @include max-width($md) {
+                width: 100%;
+                    
+            }
+        }
+        .input-box {
+            width: 80%;
+            @include max-width($md) {
+                width: 100%;
+                    
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
+/* Save Address Page */
+.detail-form {
+    .text{
+        font-size: 20px; 
+        border-bottom: 3px solid #873d89;
+        margin-bottom: 50px;
+        .link-left{
+            a.go-back-txt{
+                font-size: 22px;
+                @include max-width($sm) {
+                    font-size: 20px;
+                }
+                @include max-width(479px) {
+                    font-size: 16px;
+                }
+            }
+        }
+        .link-right{
+            a{
+                font-size: 22px;
+                @include max-width($sm) {
+                    font-size: 20px;
+                }
+                @include max-width(479px) {
+                    font-size: 16px;
+                }
+            }
+            a.new-l{
+                @include max-width (767px){
+                    display: block;
+                }
+            }
+        }
+    }
+    .no-border-bottom{
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .saved-address{
+        label{
+            color: $colorAlpha;
+            font-size: 30px;
+            font-weight: 600;
+            padding-right: 40px;
+            position: relative;
+            cursor: pointer;
+            span{
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                background: #873d89;
+                border-radius: 100px;
+                padding: 5px;
+                top: 50%;
+                transform: translateY(50%);
+                position: relative;
+                @include max-width($sm)
+                {
+                    transform: translateY(35%);
+
+                }
+            }
+        }
+        .address{
+            span{
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                background: #873d89;
+                border-radius: 100px;
+                cursor: pointer;
+                position: relative;
+                top: 50%;
+                transform: translateY(25%);
+                @include max-width($sm)
+                {
+                    width: 30px;
+                    height: 30px;
+
+                }
+                svg{
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    @include max-width($sm)
+                    {
+                        width: 20px;
+                        height: 20px;
+
+                    }
+                }
+            }
+        }
+    }
+    .add-address{
+        label{
+            color: $colorAlpha;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 50px;
+            padding-right: 40px;
+            position: relative;
+            cursor: pointer;
+            &::before{
+                position: absolute;
+                content: '';
+                background: #873d89;
+                width: 30px;
+                height: 30px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                border-radius: 100px;
+                right: 0px;
+            }
+            &::after{
+                position: absolute;
+                content: "+";
+                right: 7px;
+                color: #fff;
+                top: 1px;
+                font-weight: 300;
+                @include max-width (767px){
+                    right: 9px;
+                }
+            }
+        }
+    }
+    .edit-address{
+        label{
+            color: $colorAlpha;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 50px;
+            padding-right: 40px;
+            position: relative;
+            cursor: pointer;
+            @include max-width($sm){
+                font-size: 24px;
+                width: auto;
+            }
+            span {
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                background: #873d89;
+                border-radius: 100px;
+                position: relative;
+                top: 50%;
+                transform: translateY(25%);
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    fill: #ffffff;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+    .delete-address{
+        label{
+            color: $colorAlpha;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 50px;
+            padding-right: 40px;
+            position: relative;
+            cursor: pointer;
+            @include max-width($sm){
+                font-size: 24px;
+                width: auto;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                background: #873d89;
+                width: 30px;
+                height: 30px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                border-radius: 100px;
+                right: 0px;
+            }
+            &::after{
+                position: absolute;
+                content: "-";
+                right: 9px;
+                color: #fff;
+                top: -2px;
+                font-weight: 300;
+                @include max-width (767px){
+                    right: 9px;
+                }
+            }
+        }
+    }
+  
+    .save-add-details{
+        padding: 50px;
+        @include max-width($sm) {
+            padding: 30px 10px 50px;
+        }
+        label{
+            width: 40%;
+            @include max-width(479px) {
+                width: 45%;   
+            }
+        }
+        .input-box {
+            width: 55%;
+            color: $primary;
+            @include max-width(479px) {
+                width: 52%;   
+            }
+        }
+        #addresses{
+            height: 100px;
+            border: none;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            option{
+                font-size: 30px;
+                padding: 10px 10%;
+                text-align: center;
+                margin-right: 25px;
+                margin-left: 25px;
+                display: inline-block;
+                cursor: pointer;
+                border:none;
+                border-radius: 50px;
+                color: white;
+                background-color: #873d89;
+                @include max-width (1399px){
+                    font-size: 24px;
+                }
+                @include max-width (1199px){
+                    font-size: 22px;
+                }
+            } 
+        } 
+    }
+}.save-add{
+    &::after{
+        display: none;
+    }
+}
+.detail-form.save-add{
+    .save-add-details{
+        background: $white;
+        position: relative;
+        z-index: 0;
+        &::before,&::after{
+            content: "";
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            height: 100px;
+            background: #873d89;
+            width: 600px;
+            transform: translateY(-50%);
+            z-index: -1;
+            left: auto;
+        }
+        &::after{
+            left: 100%;
+            right: auto;
+        }
+    }
+}
+
+/* Bank Detail Page */
+
+.detail-form {
+    .save-add-details{
+        .fileupload{
+            width: 35%;
+            @include max-width($sm) {
+                width: 100%;
+                    
+            }
+        }
+    }
+    .bank-details{
+        label{
+            width: 30%;
+            @include max-width($sm) {
+                width: 100%;
+                font-size: 24px;
+                    
+            }
+
+        }
+        .input-box {
+            width: 69%;
+            @include max-width($sm) {
+                width: 100%;
+                    
+            }
+        }
+    }
+}
+
+/* Marketing Material */
+.market-banner{
+    .linktxt {
+        border-bottom: 2px solid #d13f81;
+        a.go-back-arrow{
+            color: #d13f81;
+            font-weight: 600;
+        }
+        a.go-back-txt{
+            color: $black;
+            &:hover{
+                color: $colorAlpha;
+            }
+            @include max-width(1199px) {
+                font-size: 20px;
+            }
+            @include max-width($sm) {
+                font-size: 16px;
+            }
+        }
+        .text-end{
+            a{
+                color: $black;
+                &:hover{
+                    color: $colorAlpha;
+                }
+                @include max-width(1199px) {
+                    font-size: 20px;
+                }
+                @include max-width($sm) {
+                    font-size: 16px;
+                }
+            }
+
+        }
+        >div{
+            @include max-width (991px){
+                &:nth-child(1){
+                    width: 20%;
+                }
+                &:nth-child(2){
+                    width: 80%;
+                }
+            }
+            @include max-width (767px){
+                &:nth-child(1){
+                    width: 25%;
+                }
+                &:nth-child(2){
+                    width: 75%;
+                }
+            }
+            @include max-width (479px){
+                &:nth-child(1){
+                    width: 30%;
+                }
+                &:nth-child(2){
+                    width: 70%;
+                }
+            }
+            @include max-width (359px){
+                &:nth-child(1){
+                    width: 35%;
+                }
+                &:nth-child(2){
+                    width: 65%;
+                }
+            }
+        }
+        @include max-width (767px){
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.marketing-material {
+    padding: 100px 0;
+    align-items: center;
+    @include max-width(991px) {
+        padding: 50px 0;
+    }
+    @include max-width($sm) {
+        padding: 50px 0 0;
+        .mob-1{
+            order: 1;
+        }
+        .mob-2{
+            order: 2;
+        }
+    }
+   
+    .left-pink-bg {
+        border-radius: 200px 0 0 200px;
+        margin: 0 0 0 -42px;
+        padding-left: 200px;
+        padding-right: 200px;
+        position: relative;
+        z-index: 0;
+        &:before{
+            position: absolute;
+            content: '';
+            background: #d13f81;
+            height: 100%;
+            width: 600px;
+            z-index: -1;
+            right: auto;
+            left: 100%;
+            top: 0;
+            bottom: 0;
+            @include max-width(767px) {
+                display: none;
+            }
+        }
+        @include max-width(1399px) {
+            padding: 50px;
+            padding-left: 200px;
+            padding-right: 119px;
+        }
+        @include max-width(991px) {
+            padding: 30px;
+            padding-left: 130px;
+            padding-right: 29px;
+        }
+        @include max-width(767px) {
+            padding: 30px;
+            text-align: center;
+            padding-top: 140px;
+            border-radius: 200px 200px 0px 0;
+            margin: 0;
+            margin-top: -120px;
+        }
+        p{
+            color: $white;
+        }
+    }
+    .right-pink-bg{
+        position: relative;
+        background: transparent;
+        @include max-width (767px){
+            padding: 0;
+            z-index: 1;
+        }
+        figure{
+            width: 400px;
+            right: 0;
+            position: absolute;
+            @include max-width (767px){
+                position: relative;
+                margin-bottom: 0;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                width: 240px;
+            }
+        }
+    }
+}
+.marketing-material-mobile{
+    display: none;
+    @include max-width($sm) {
+        display: block;
+    }
+    .left-img-mobile{
+        
+        // background: #fff;
+        figure{
+            width: 320px;
+            display: inline-block;
+            overflow: hidden;
+            background: #f3ce2c;
+            padding: 15px;
+            position: relative;
+            border-radius: 100%;
+            max-width: 100%;
+            bottom: -90px;
+            &::after{
+                content: "";
+                background: #873d89;
+                position: absolute;
+                top: 25%;
+                bottom: 25%;
+                left: 0;
+                right: 0;
+                transition: all 1s ease-in-out 0s;
+            }
+            img{
+                z-index: 1;
+                position: relative;
+                border-radius: 100%;
+               
+                
+            }
+        }
+    }
+    .right-bg{
+        padding: 100px 50px 100px;
+        background: #d13f81;
+        border-radius: 250px 250px 0 0;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: -1;
+        bottom: 0;
+        .sec-hd{
+            font-size: 45px;
+        }
+        p{
+            font-size: 24px;
+        }
+    }
+   
+
+}
+
+.marketing-material.mem-learn{
+    .left-pink-bg{
+        border-radius: 0 200px 200px 0;
+        padding-left: 100px;
+        margin: 0 -150px 0 0;
+        &::before{
+            left: auto;
+            right: 100%;
+        }
+        @include max-width (1399px){
+            padding-left: 50px;
+            padding-right: 130px;
+        }
+        @include max-width (767px){
+            padding: 30px;
+            padding-top: 30px;
+            text-align: center;
+            padding-top: 140px;
+            border-radius: 200px 200px 0px 0;
+            margin: 0;
+            margin-top: 0px;
+            margin-top: -120px;
+        }
+    }
+    .right-pink-bg {
+        padding: 200px;
+        z-index: 1;
+        @include max-width (1199px){
+            padding: 140px;
+        }
+        @include max-width (991px){
+            padding: 110px;
+        }
+        @include max-width (767px){
+            padding: 0px;
+        }
+    }
+    .container{
+        @include max-width(991px){
+            &::before,&::after{
+                display: block !important;
+            }
+        }
+    }
+}
+.printing-material{
+    background: url(../../images/storiesbg.png) center;
+    background-size: 50%;
+    border-bottom: 10px solid #f3ce2c;
+    padding: 50px 0 150px 0;
+    &::before{
+        background: none;
+    }
+   
+    h1.sec-hd{
+        margin-bottom: 60px;
+    }
+    h4{
+        color: $colorAlpha;
+        text-transform: none;
+        margin-bottom: 50px;
+        font-size: 40px;
+        @include max-width($sm) {
+           margin-bottom: 30px;
+        }
+    }
+    .download-btn{
+        display: inline-flex;
+        a{
+            
+            border-radius: 50px;
+            padding: 10px 50px;
+            background: $colorAlpha;
+            color: $white;
+            margin: 30px 0;
+            &:hover{
+                background: $primary;
+            }
+            @include max-width(991px) {
+                padding: 10px 30px;
+                font-size: 20px;
+            }
+            @include max-width(767px) {
+                padding: 10px 50px;
+            }
+            @include max-width($sm) {
+                margin: 20px 0 50px;
+            }
+        }
+        @include max-width(575px) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    @include max-width($sm) {
+        padding: 50px 0 0 0 !important;
+    }
+    .owl-carousel{
+        .owl-nav{
+            top: 35%;
+            left: 10px;
+            right: 10px;
+            display: none !important;
+            @include max-width (767px){
+                display: flex !important;
+                top: 40%;
+            }
+            @include max-width (479px){
+                left: 0;
+                right: 0;
+            }
+            button{
+                @include max-width (359px){
+                    width: 14px;
+                }
+            }
+        }
+        .shopfor.text-center{
+            figure{
+                @include max-width (359px){
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+/* Wallet Page */
+
+.wallet-link{
+    padding: 50px 0;
+    .bor-bot
+    {
+        border-bottom: 3px solid $colorAlpha;
+        padding-bottom: 10px;
+        a.go-back-arrow{
+            color: #d13f81;
+            font-weight: 600;
+        }
+        a.go-back-txt{
+            color: $black;
+            &:hover{
+                color: $colorAlpha;
+            }
+            @include max-width($sm) {
+                font-size: 16px;
+            }
+        }
+        .text-end{
+            a{
+                color: $black;
+                &:hover{
+                    color: $colorAlpha;
+                }
+                @include max-width($sm) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.wallet-box{
+    padding: 20px 0 100px;
+    text-align: center;
+    @include max-width (991px){
+        padding: 20px 0;
+    }
+    @include max-width (359px){
+        padding:0;
+    }
+    .wallet{
+        margin-bottom: 50px;
+        h1{
+            color: #d13f81;
+            margin-bottom: 15px;
+            font-size: 65px;
+        }
+        p{
+            color: #d13f81;
+            padding: 0 100px;
+        }
+    }
+    .wallet-product{
+        h2{
+            color: $white;
+            font-size: 45px;
+        }
+        h4{
+            font-size: 60px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #ffe108;
+            font-weight: 600;
+        }
+        span{
+            background: #ffe108;
+            font-size: 65px;
+            padding: 10px 35px;
+            border-radius: 100%;
+            
+        }
+        p{
+            color: $white;
+        }
+        .product-box
+        {
+            background-color: $colorAlpha;
+            padding: 50px 30px 120px;
+            border-radius: 30px;
+            position: relative;
+            &::after{
+                content: "";
+                background: url(../../images/bottom-design.png) center no-repeat;
+                background-size: 100%;
+                background-size: 100%;
+                position: absolute;
+                width: 100%;
+                height: 50px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+            }
+            span{
+                color: $colorAlpha;
+            }
+            
+        }
+        .cash-box{
+            background-color: $primary;
+            padding: 50px 30px 120px;
+            border-radius: 30px;
+            position: relative;
+            &::after{
+                content: "";
+                background: url(../../images/bottom-design.png) center no-repeat;
+                background-size: 100%;
+                background-size: 100%;
+                position: absolute;
+                width: 100%;
+                height: 50px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+            }
+            span{
+                color: $primary;
+            }
+        }
+        .reward-box{
+            background-color: #2AAA8A;
+            padding: 50px 30px 120px;
+            border-radius: 30px;
+            position: relative;
+            &::after{
+                content: "";
+                background: url(../../images/bottom-design.png) center no-repeat;
+                background-size: 100%;
+                background-size: 100%;
+                position: absolute;
+                width: 100%;
+                height: 50px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+            }
+            span{
+                color: #2AAA8A;
+            }
+
+        }
+        .wallet-box-btn{
+            margin-top: 40px;
+            a{
+                border-radius: 50px;
+                padding: 10px 80px;
+                background: white;
+                color: $colorAlpha;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover{
+                        background: $secondary; 
+                }
+            }
+        }
+    }
+}
+.donationbox-step-title.saathi-ttl{
+    position: relative;
+    padding: 80px 0 60px;
+    &::after{
+        position: absolute;
+        content: '';
+        right: 0;
+        left: 0;
+        background: url(../../images/repeat-orange.jpg) center;
+        background-size: auto;
+        background-size: auto 100%;
+        height: 30px;
+        top: 0;
+    }
+    @include max-width (1366px){
+        padding: 60px 0 40px;
+    } 
+}
+.donationbox-step-title.corp-ttl {
+	padding: 40px 0;
+}
+.raahi-banner.n-img{
+    .carousel-inner{
+        .item{
+            img{
+                max-width: 280px;
+                @include max-width (991px){
+                    max-width: 170px;
+                }
+                @include max-width (767px){
+                    max-width: 220px;
+                }
+            }
+        }
+    }
+}
+.card-tracking {
+	z-index: 0;
+	background-color: #eceff1;
+	padding-bottom: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-radius: 10px;
+    .top {
+        padding-top: 40px;
+        padding-left: 13%;
+        padding-right: 13%;
+        @include max-width(479px){
+            padding-left: 9%;
+            padding-right: 9%;
+        }
+    }
+    .order-color{
+        color: #d13f81;
+    }
+    .d-flex{
+        width: auto;
+    }
+    .text-sm-right{
+        text-align: right;
+        @include max-width(479px){
+            text-align: left;
+            width: 100%;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 18px;
+            .font-weight-bold {
+                font-weight: bold;
+            }
+            @include max-width(767px){
+                font-size: 16px;
+            }
+        }
+    }
+    h5{
+        @include max-width(767px){
+            font-size: 16px;
+        }
+    }
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        color: #455a64;
+        padding-left: 0px;
+        margin-top: 30px;
+        position: relative;
+        z-index: 0;
+        li{
+            list-style-type: none;
+            font-size: 13px;
+            width: 25%;
+            float: left;
+            position: relative;
+            font-weight: 400;
+            &::before{
+                width: 40px;
+                height: 40px;
+                line-height: 45px;
+                display: block;
+                font-size: 20px;
+                background: #e8b9ce;
+                border-radius: 50%;
+                margin: auto;
+                padding: 0px;
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: 12px;
+                background: #c5cae9;
+                position: absolute;
+                left: 0;
+                top: 16px;
+                z-index: -1;
+                -webkit-transition: 0.3s;
+                -ms-transition: 0.3s;
+                transition: 0.3s;
+            }
+            &:first-child::after {
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                position: absolute;
+                left: 50%;
+                z-index: 0;
+            }
+        }.active{
+            &::before,&::after{
+                content: "";
+                background: #d13f81;
+            }
+        }.step0{
+            &::before{
+                position: relative;
+                content: "";
+                color: #fff;
+                transition: all 0.2s;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                background: url(../../images/check.svg) #d13f81;
+                background-repeat: repeat;
+                background-size: auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+                z-index: 2;
+            }
+        }
+        li:nth-child(2),li:nth-child(3){
+            &::after{
+                left: -50%;
+                z-index: 0;
+            }
+        }
+        li:last-child{
+            &::after{
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                position: absolute;
+                left: -50%;
+                background: #e8b9ce;
+                z-index: -1;
+            }
+        }
+    }
+    .icon-content{
+        padding: 0;
+        padding-bottom: 0px;
+        padding-bottom: 20px;
+        @include max-width(991px){
+            width: 50%; 
+        }
+        span{
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            padding: 0;
+            @include max-width(479px){
+                width: 50px;
+                height: 50px;
+            }
+            svg{
+                float: left;
+                width: 100%;
+            }
+        }
+        .icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+        .d-flex.flex-column {
+            padding: 0;
+            p{
+                font-size: 18px;
+                font-weight: bold;
+                margin: 0;
+                @include max-width(359px){
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+.order-land-main.ord-de.less-margin {
+	margin-top: 0;
+	padding-top: 0;
+}

@@ -1,0 +1,171 @@
+header {
+    .header-top {
+        background: $primary;
+        color: $white;
+        height: 45px;
+        padding: 6px 0 10px 0;
+        @include max-width($md) {
+            font-size: 14px;
+            height: auto;
+            padding: 6px 0 4px 0;
+        }
+        p {
+            font-size: 16px;
+            @include max-width($md) {
+                font-size: 14px;
+            }
+        }
+        a {
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .header-bottom {
+        padding-bottom: 10px;
+        @include max-width($md) {
+            background: rgba($primary, 0.1);
+            position: relative;
+        }
+        .logo {
+            margin: 0 60px;
+            @include max-width($md) {
+                margin: 0;
+                
+            }
+            img { 
+                width: 110px;
+                margin: -30px 0 0 0;
+                @include max-width($xxl) {
+                    width: 100px;
+                }
+                @include max-width($md) {
+                    width: 78px;
+                    margin: 0;
+                }
+            }
+        }
+        .nav {
+            &:not(.nav-sm) {
+                justify-content: center;
+                @include max-width($md) {
+                    justify-content: flex-start;
+                    display: none;
+                    position: absolute;
+                    flex-flow: column;
+                    z-index: 500;
+                    top: 100%;
+                    right: 15px;
+                    left: 15px;
+                    padding: 20px 0 35px;
+                    background: url(../../images/menu-patern.png) repeat-x $primary;
+                    background-position: center calc(100% - 8px);
+                    background-size: auto 16px;
+                }
+                .nav-item {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 10px;
+                    @include max-width($xxl) {
+                        margin: 0 12px;
+                    }
+                    
+                    .nav-link {
+                        color: $primary;
+                        text-transform: uppercase;
+                        padding: 0;
+                        margin-top: 16px;
+                        font-size: 21px;
+                        @include min-width($lg) {
+                            font-size: 16px;
+
+                        }
+                        @include min-width($xxl) {
+                            font-size: 21px;
+
+                        }
+                        
+                        @include max-width($md) {
+                            color: $white;
+                            margin-top: 0;
+                            padding: 9px 0;
+                            width: 100%;
+                        }
+                        &:after {
+                            content: "";
+                            width: 100%;
+                            display: table;
+                            height: 8px;
+                            margin-top: 5px;
+                            background: url(../../images/menu-hover.svg) repeat-x;
+                            background-size: 100px;
+                            animation: wave 4.2s linear 0s infinite;
+                            opacity: 0;
+                            @include max-width($xxl) {
+                                display: none;
+                            }
+                        }
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                .logo {
+                    @include max-width($md) {
+                        display: none;
+                    }
+                }
+            }
+            &.nav-sm {
+                padding: 10px 0 0 0;
+                @extend .inline-flex;
+                @include max-width($md) {
+                    width: 100%;
+                    align-items: center;
+                }
+                .nav-item {
+                    margin: 0 12px;
+                    .nav-link {
+                        padding: 0;
+                        &:hover {
+                            svg {
+                                .cls-1 {fill:$colorBeta;}
+                            }
+                        }
+                        svg {
+                            height: 24px;
+                            @include max-width($xxl) {
+                                height: 22px;
+                            }
+                            .cls-1 {fill:$primary;}
+                        }
+                    }
+                    &.menu-btn {
+                        display: none;
+                        @include max-width($md) {
+                            display: block;
+                        }
+                    }
+                    &:nth-child(1) {}
+                    &:nth-child(2) {order: 4;}
+                    &:nth-child(3) {order: 1;}
+                    &:nth-child(4) {order: 2;}
+                    &:nth-child(5) {order: 5;}
+                }
+                .logo {
+                    display: none;
+                    @include max-width($md) {
+                        display: block;
+                        order: 3;
+                        margin: -10px auto 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

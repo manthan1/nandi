@@ -1,0 +1,153 @@
+.marker {
+	max-width: 8vh;
+	max-height: 8vh;
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+	pointer-events: all;
+    border-radius: 100%;
+    background-color: darken($white, 8%); 
+    background-size: cover;
+    border: 3px solid $secondary;
+    margin-bottom: 15px;
+    transform: translate(-50%, calc(-100% - 10px));
+    width: 40px;
+    height: 40px;
+	position: relative;
+	&:after {
+		content: "";
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 15px solid $secondary;
+		position: absolute;
+		top: 100%;
+		left: calc(50% - 10px);
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+	}
+}
+.earth-occluded .marker {
+	opacity: 0.4;
+	&:before {
+		backdrop-filter: blur(2px);
+		border-radius: 100%;
+	}
+}
+
+
+.earth-js::after {
+    content: "";
+    position: absolute;
+    top: 9.85%;
+    left: 9.85%;
+    bottom: 9.85%;
+    right: 9.85%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10vw rgba($black, 15%);
+    // box-shadow: inset -7vw -10vw 10vw rgba($black, 10%);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+
+#wrapper {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	
+	position: relative;
+	margin: 0 auto;
+	width: 92%;
+	max-width: 100em;
+	font-family: sans-serif;
+	min-height: 100vh;
+}
+
+.alumni-info {
+	transition: color 0.2s ease;
+	padding: 0.25em 0;
+	&.active {
+		color: red;
+	}
+}
+
+.alumni-info + .alumni-info {
+	border-top: 1px #D0D0D0 solid;
+}
+
+p {
+	line-height: 140%;
+}
+h3 {
+	font-size: 1.1em;
+	cursor: pointer;
+	margin-bottom: -0.2em;
+	line-height: 140%;
+}
+h3:hover {
+	color: red;
+}
+
+.has-news #please-click {
+	display: none;
+}
+
+#local-news .alumni-info {
+	display: none;
+}
+#local-news.has-news .alumni-info {
+	display: block;
+}
+#local-news.toggle-news .news:last-child {
+	display: none;
+}
+
+
+
+
+@include max-width(1199px) {
+	#wrapper {
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-align-items: flex-start;
+		align-items: flex-start;
+		width: 100%;
+	}
+	#earth-col {
+		-webkit-order: 0;
+		order: 0;
+		flex: 0 1 100vw;
+		max-width: 50em;
+	}
+	
+}
+
+@include max-width(511px) {
+    .marker { 
+        width: 30px;
+        height: 30px;
+        transform: translate(-50%, calc(-100% - 7px));
+		border: 2px solid $secondary;
+    }
+    .marker:after {
+        content: "";
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 10px solid $secondary;
+        left: calc(50% - 7px);
+    }
+}

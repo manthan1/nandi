@@ -1,0 +1,533 @@
+.team-banner {
+    padding: 15px 15px;
+    position: relative;
+    @include min-width($md) {
+        margin: 55px 0 0 0;
+        padding: 50px;
+    }
+    .banner-patern {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        @include transform(translateY(-50%));
+        .patern1 {
+            @include orangeBg;
+            height: 3px;
+            width: 100%;
+            margin-bottom: 6px;
+        }
+        .patern2 {
+            @include orangeBg;
+            height: 110px;
+            width: 100%;
+        }
+    }
+    .team-container {
+        background: rgba($black, 0.06);
+        border: 2px solid rgba($black, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        padding: 25px 25px;
+        @include min-width($md) {
+            display: grid;
+            flex-flow: wrap;
+            grid-template-columns: 50% 50%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .banner-title {
+            text-align: center;
+            display: table;
+            margin: 0px auto;
+            @include min-width($md) {
+                order: 1;
+                margin: auto auto 0;
+                width: 600px;
+                max-width: 100%;
+            }
+            h1 {
+                font-size: 34px;
+                color: $secondary;
+                br {
+                    display: none;
+                }
+                @include min-width($md) {
+                    font-weight: 500;
+                    font-size: 74px;
+                    &:after {
+                        content: "";
+                        display: block;
+                        background: #F2AD33;
+                        height: 3px;
+                        margin: 40px 0 0;
+                    }
+                    br {
+                        display: block;
+                    }
+                }
+                &:before {
+                    content: "";
+                    display: block;
+                    background: #F2AD33;
+                    height: 3px;
+                    margin: 0 0 20px;
+                    @include min-width($md) {
+                        display: none;
+                    }
+                }
+            }
+            img {
+                width: 300px;
+                @include min-width($md) {
+                    display: none;
+                }
+            }
+        }
+        .img-container {
+            text-align: center;
+            @include min-width($md) {
+                order: 3;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            img {
+                width: 80%;
+                @include min-width($md) {
+                    width: auto;
+                    max-height: 70vh;
+                    min-height: 600px;
+                }
+            }
+        }
+        .slider-caption {
+            background: $white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb($black, 20%);
+            padding: 20px 20px;
+            color: $secondary;
+            font-weight: 300;
+            position: relative;
+            z-index: 2;
+            margin: 15px 0 20px;
+            @include min-width($md) {
+                font-size: 18px;
+                margin: 0 auto auto;
+                max-width: 440px; 
+                order: 2;
+                background: rgba($white, 0.9);
+            }
+            @include min-width($xl) {
+                max-width: 600px;
+            }
+            .trust-name {
+                width: 100%;
+                @extend .flex, %flex-column, %align-start;
+                white-space: nowrap;
+                margin: 0 0 20px 0;
+                position: relative;
+                @include min-width($md) {
+                }
+                img {
+                    position: absolute;
+                    right: 0;
+                    width: 90px;
+                    top: 13px;
+                    @include min-width($md) {
+                        width: 170px;
+                    }
+                }
+                h4 {
+                    display: inline-block;
+                    margin: 0;
+                    font-family: $secondary-font;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $primary-tx;
+                    @include min-width($md) {
+                        font-size: 22px;
+                    }
+                    @include min-width($xl) {
+                        font-size: 30px;
+                    }
+                } 
+                p {
+                    display: inline-block;                    
+                    margin: 0;
+                    color: $secondary;
+                    font-weight: 300;
+                    font-size: 16px;
+                    @include min-width($md) {
+                        font-size: 18px;
+                    }
+                    @include min-width($xl) {
+                        font-size: 20px;
+                    }
+                }
+            }
+            p {
+                margin: 0;
+                @extend .pera;
+                
+                b {
+                    font-weight: 500;
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 16px;
+                    @include min-width($md) {
+                        font-size: 20px;
+                    }
+                    @include min-width($lg) {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@mixin patern2 {
+    z-index: 2;
+    padding: 35px;
+    background: none;
+    &:after {
+        content: "";
+        background: rgba(0, 0, 0, 0.06);
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(3px);
+        padding: 60px 0;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        top: 10px;
+        z-index: -1;
+    }
+    &:before {
+        display: none;
+    }
+    .team-img {
+        box-shadow: 0 0 5px rgb($black, 0.30);
+    }
+    .team-details {
+        @include orangeBg;
+        border-radius: 15px;
+        border: 0;
+        h5 {
+            color: $black;
+        }
+        ul li::marker {
+            color: $white;
+        }
+    }
+}
+@mixin patern1 {
+    @include orangeBg;
+    padding: 35px;
+    &::before {
+        content: "";
+        background: url(../images/lines2.svg) no-repeat center top;
+        background-size: 100% 26px;
+        position: absolute;
+        top: 0;
+        left: 15px;
+        right: 15px;
+        padding: 0 0 18%;
+    }
+    &::after {
+        content: "";
+        background: url(../images/lines2.svg) no-repeat center top;
+        background-size: 100% 26px;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+        padding: 0 0 18%;
+        @include transform(rotate(180deg));
+    }
+    .team-details {
+        background: linear-gradient(90deg, #d7dbe4, #fff);
+        border: 1px solid $white;
+    }
+}
+
+.team-sec {
+    .filter {
+        background: rgba($black, 0.06);
+        border: 2px solid rgba($black, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        padding: 25px 25px;
+        margin: 20px;
+        @include min-width($md) {
+            display: flex;
+            padding-bottom: 70px;
+            margin: 25px 50px;
+            &:after {
+                content: "";
+                position: absolute;
+                left: -52px;
+                right: -52px;
+                bottom: 30px;
+                height: 15px;
+                @include orangeBg;
+            }
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 15px;
+            @include min-width($md) {
+                width: 50%;
+                margin-bottom: 0;
+            }
+            input {
+                background: $white;
+                border-radius: 50px;
+                border: 0px;
+                width: 100%;
+                box-shadow: 0 0 5px rgb($black, 0.20);
+                font-size: 16px;
+                line-height: 1;
+                padding: 8px 24px;
+                height: 50px;
+                color: #5C5850;
+                background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 66.55 67.82'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23f2ad33;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M60.52,67.82a7.72,7.72,0,0,1-4-2.48C50.69,59.54,44.86,53.78,39.06,48a.85.85,0,0,0-1.22-.18,24.56,24.56,0,0,1-15.21,3A24.89,24.89,0,0,1,4.68,40.16,24.68,24.68,0,0,1,.21,22.34,24.82,24.82,0,0,1,8.78,6.23,24.18,24.18,0,0,1,21.5.3C31.4-1.06,39.58,2.19,45.79,10A24.39,24.39,0,0,1,51,26.05a25,25,0,0,1-4.39,13.74c-.08.13-.16.26-.39.58a3.33,3.33,0,0,1,.67.43L64.77,58.49a5.29,5.29,0,0,1,1,6.76,5,5,0,0,1-3,2.33l-.75.24ZM25.58,42A16.46,16.46,0,1,0,9.05,25.62,16.5,16.5,0,0,0,25.58,42Z'/%3E%3C/svg%3E");
+                background-position: calc(100% - 14px) center;
+                background-repeat: no-repeat;
+                background-size: auto 28px;
+                font-family: $museo;
+                @include min-width($md) {
+                    box-shadow: 0 0 10px rgb($black, 0.20);
+                    font-size: 20px;
+                }
+            }
+        }
+        .filter-drop {
+            background: linear-gradient(90deg, $primary-tx, lighten($primary, 5%));
+            margin: 0 -47px;
+            @extend .flex;
+            padding: 14px 21px;
+            @include min-width($md) {
+                background: none;
+                margin: 0;
+                width: 50%;
+            }
+            .filter-select {
+                width: 50%;
+                padding: 0 10px;
+                
+                select {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    width: 100%;
+                    padding: 9px 15px;
+                    font-size: 15px;
+                    border-radius: 50px;
+                    border: 0;
+                    background: rgba($white,0.9) no-repeat calc(100% - 12px) center;
+                    background-size: 12px;
+                    background-image: url("data:image/svg+xml,%0A%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26.28 14.23'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%235d5951;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M12.75,14.07.16.94A.55.55,0,0,1,.55,0H25.73a.55.55,0,0,1,.39.94L13.53,14.07A.56.56,0,0,1,12.75,14.07Z'/%3E%3C/svg%3E");
+                    color: $secondary;
+                    box-shadow: 0 0 5px rgb($black, 0.20);
+                    font-weight: 500;
+                    font-family: $museo;
+                    @include min-width($md) {
+                        height: 50px;
+                        background-size: 15px;
+                        background-position: calc(100% - 17px) center;
+                        padding: 10px 20px 9px;
+                        box-shadow: 0 0 10px rgb($black, 0.20);
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .team-listing {
+        @include min-width($md) {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            padding: 40px 30px 0;
+        }
+        .team-item {
+            position: relative;
+            @include min-width($md) {
+                margin: 0 20px 40px;
+                max-width: calc(50% - 40px);
+            }
+            .team-img {
+                padding-bottom: 100%;
+                background: no-repeat center top;
+                background-size: cover;
+                border-radius: 5px 5px 0 0;
+                box-shadow: 0 0 5px rgb($black, 0.20);
+            }
+            .team-details { 
+                border-radius: 5px;
+                margin: -5px -5px 0;
+                color: $secondary;
+                box-shadow: 0 2px 5px rgb($black, 0.20);
+                padding: 20px 15px;
+                position: relative;
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: 300;
+                    @include min-width($md) {
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                }
+                .team-top {
+                    position: relative;
+                    img {
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        @include transform(translateY(-50%));
+                        width: 70px;
+                        filter: drop-shadow(0 1px 1px rgba(0,0,0,0.6));
+                        @include min-width($md) {
+                            filter: drop-shadow(0 1px 1px rgba(0,0,0,0.6));
+                            right: 30px;
+                            width: 120px;
+                        }
+                    }
+                }
+                h5 {
+                    background: rgba($white, 0.9);
+                    border-radius: 50px;
+                    text-align: center;
+                    color: $primary-tx;
+                    font-family: $secondary-font;
+                    display: table;
+                    line-height: 1;
+                    margin: 8px 0 15px -31px;
+                    padding: 8px 30px 7px;
+                    box-shadow: 0 2px 5px rgb($black, 0.20);
+                    @include min-width($md) {
+                        font-size: 20px;
+                        box-shadow: 0 0 10px rgb($black, 0.20);
+                        padding: 10px 30px 8px;
+                    }
+                }
+                ul {
+                    padding: 0 0 0 17px;
+                    margin: 0;
+                    li {
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                        @include min-width($md) {
+                            font-size: 18px;
+                        }
+                        &::marker {
+                            color: $primary;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &:nth-child(odd) {
+                @include max-width($md) {
+                    @include patern1; 
+                }
+            }
+            &:nth-child(even) {
+                @include max-width($md) {
+                    @include patern2;
+                }
+            }
+            // &:nth-child(2),
+            // &:nth-child(3),
+            // &:nth-child(6) {
+            //     @include min-width($md) {
+            //         @include patern2;
+            //     }
+            // }
+            @include min-width($md) {
+                @include patern1;
+            } 
+            $ntCount: 2,3, 6,7, 10,11, 14,15, 18,19, 22,23, 26,27, 30,31, 34,35, 38,39, 42,43, 46,47, 50;
+            @each $s in ($ntCount) {
+                &:nth-child(#{$s}) {
+                    @include min-width($md) {
+                        @include patern2;
+                    } 
+                }
+            } 
+            // &:nth-child(1),&:nth-child(4) {
+            //     @include max-width($md) {
+            //         @include patern1;
+            //     }
+            // }
+        }
+    }
+}
+
+.loadMore {
+    display: block;
+    @include orangeBg;
+    padding: 24px 50px;
+    margin: 50px 0;
+}
+
+.proud-sec {
+    @include orangeBg;
+    color: $white;
+    text-align: center;
+    padding: 40px 40px;
+    position: relative;
+    z-index: 2;
+    @include min-width($md) {
+        padding: 70px 10vw;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        top: 10px;
+        z-index: -1;
+        border: 2px solid $white;
+        @include min-width($md) {
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            top: 15px;
+            border: 3px solid $white;
+        }
+    }
+    h3 {
+        margin: 0 0 4px;
+        font-weight: 700;
+        font-size: 24px;
+        @include min-width($md) {
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+    }
+    h2 {
+        margin: 0 0 20px;
+        font-weight: 700;
+        font-size: 30px;
+        @include min-width($md) {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+    }
+    p {
+        margin: 0;
+        @extend .pera;
+        color: $white;
+    }
+}
