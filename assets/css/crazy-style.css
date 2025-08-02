@@ -1,143 +1,35 @@
-/* Crazy Styles for Wow Nandi */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
-
-:root {
-    --primary-color: #ff6b6b;
-    --secondary-color: #feca57;
-    --background-color: #1a1a1a;
-    --text-color: #f5f6fa;
-    --heading-font: 'Montserrat', sans-serif;
-    --body-font: 'Roboto', sans-serif;
+// Crazy animations
+@keyframes crazy-bg {
+    0% { background-color: #ff0000; }
+    25% { background-color: #ffff00; }
+    50% { background-color: #00ff00; }
+    75% { background-color: #00ffff; }
+    100% { background-color: #ff00ff; }
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--text-color);
-    background-color: var(--background-color);
-    overflow-x: hidden;
+    animation: crazy-bg 10s infinite alternate;
 }
 
-.cursor {
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: all 0.1s ease;
+.btn-primary {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
 }
 
-.cursor.hover {
-    width: 50px;
-    height: 50px;
-    background: var(--secondary-color);
-    border: none;
+.col-prod:hover img {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 }
 
-.hero-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-title {
-    font-family: var(--heading-font);
-    font-size: 6rem;
-    color: var(--text-color);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-}
-
-.parallax-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../images/diya.png') no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-}
-
-.navbar {
-    background-color: rgba(26, 26, 26, 0.8) !important;
-    backdrop-filter: blur(10px);
-}
-
-.nav-link {
-    color: var(--text-color) !important;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: var(--primary-color) !important;
-}
-
-.product-section {
-    background-color: var(--background-color);
-}
-
-.product-card {
-    position: relative;
-    perspective: 1000px;
-    margin-bottom: 30px;
-}
-
-.product-image {
-    width: 100%;
-    height: 300px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.product-card:hover .product-image {
-    transform: rotateY(180deg);
-}
-
-.product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.product-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--primary-color);
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.btn-buy {
-    background: var(--secondary-color);
-    color: var(--background-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-.btn-buy:hover {
-    background: #fff;
-    color: var(--secondary-color);
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
