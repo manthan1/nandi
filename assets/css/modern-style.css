@@ -1,0 +1,176 @@
+/* Modern Styles for Wow Nandi */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FF9800;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.cow-loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.cow {
+    width: 100px;
+    height: 100px;
+    background: url('../images/cow/cow-body.svg') no-repeat center center;
+    background-size: contain;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: rotate(-10deg);
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.hero-banner {
+    padding: 100px 0;
+    background: linear-gradient(to right, #66BB6A, #A5D6A7);
+    color: #fff;
+}
+
+.hero-banner h1 {
+    font-family: var(--heading-font);
+}
+
+.magic-section {
+    background: #fff;
+}
+
+.magic-link {
+    transition: transform 0.3s ease;
+}
+
+.magic-link:hover {
+    transform: translateY(-10px);
+}
+
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: var(--primary-color);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-overlay {
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-overlay h3 {
+    font-family: var(--heading-font);
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .fab {
+    transition: transform 0.3s ease;
+}
+
+footer .fab:hover {
+    transform: scale(1.2);
+}

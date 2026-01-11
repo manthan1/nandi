@@ -6,13 +6,13 @@
 </head>
 <body>
     <?php include 'include/header.php';?>
-   
+
     <section class="earn-nandi-banner nijal-world-earn js-scroll scrolled pad-200">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-12 col-md-6">
                         <h1>Earn with<br>
-                            NANDI 
+                            NANDI
                         </h1>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 thankyou-video">
@@ -24,7 +24,7 @@
     </section>
 
     <section class="magic-section about-magic-section nworld-magic-section earn-nandi-magic js-scroll scrolled">
-        <div class="container"> 
+        <div class="container">
             <div class="row">
                 <div class="col">
                     <h1></h1>
@@ -49,12 +49,12 @@
                             <img src="images/video-icon.png" alt="">
                         </div>
                         <div class="product-details">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                                 laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim, <a class="slideIn-btn " href="#">Read more.</a>
                             </p>
                         </div>
                         <button type="button" class="btn btn-outline-secondary">Be a Raahi</button>
-                        
+
                 </div>
                 <div class="col-lg-6  col-sm-12 col-md-6 ps-md-5">
                     <h1 class="text-center">SAATHI</h1>
@@ -62,11 +62,11 @@
                         <img src="images/video-icon.png" alt="">
                     </div>
                     <div class="product-details">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim, <a class="slideIn-btn " href="#">Read more.</a>
                         </p>
-                        
-                        
+
+
                     </div>
                     <button type="button" class="btn btn-outline-secondary">Be a Saathi</button>
                 </div>
@@ -89,7 +89,7 @@
                                 <span>500</span>
                                 <p>Cows saved</p>
                             </div>
-                    </div>                        
+                    </div>
                 </div>
                 <div class="col-lg-6 col-sm-12 col-md-6">
                     <div class="product-right">
@@ -99,7 +99,7 @@
                                 <p>Jobs Generated</p>
                             </div>
                     
-                    </div>                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@
                                 <b class="close" id="close1">Close</b>
                         </div>
                     <h3>Name Surname</h3>
-                    <p>Lorem ipsum dolor sit amet,</p> 
+                    <p>Lorem ipsum dolor sit amet,</p>
                     <a href="#">Read more...</a>
                 </div>
                 <div class="col-md-3 col-6">
@@ -131,7 +131,7 @@
                         </figure>
                     </div>
                         <h3>Name Surname</h3>
-                        <p>Lorem ipsum dolor sit amet,</p> 
+                        <p>Lorem ipsum dolor sit amet,</p>
                         <a href="#">Read more...</a>
                 </div>
                 <div class="col-md-3 col-6">
@@ -143,7 +143,7 @@
                                 <b class="close" id="close2">Close</b>
                         </div>
                         <h3>Name Surname</h3>
-                        <p>Lorem ipsum dolor sit amet,</p> 
+                        <p>Lorem ipsum dolor sit amet,</p>
                         <a href="#">Read more...</a>
                 </div>
                 <div class="col-md-3 col-6">
@@ -153,7 +153,7 @@
                         </figure>
                     </div>
                         <h3>Name Surname</h3>
-                        <p>Lorem ipsum dolor sit amet,</p> 
+                        <p>Lorem ipsum dolor sit amet,</p>
                         <a href="#">Read more...</a>
                 </div>
             </div>
@@ -194,27 +194,27 @@
             </div>
             <div class="row align-items-center">
                 <!-- <div class="col-md-2 col-2"></div> -->
-              
+
                 <div class="col-md-8 col-lg-8 col-sm-12 offset-lg-2">
                         <div class="gift-box-detail">
-                                
-                            <p class="pe-md-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, 
+
+                            <p class="pe-md-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet,
                             consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 
-                            <p class="ps-md-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, 
+                            <p class="ps-md-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet,
                                 consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                         </div>
-                                
+
                     </div>
-                
+
                 <!-- <div class="col-md-2 col-2"></div> -->
             </div>
             <div class="giftandearnbtn">
-                <button type="button" class="btn btn-success">Know More</button>                        
+                <button type="button" class="btn btn-success">Know More</button>
             </div>
         </div>
     </section>
-   
+
     <section class="magic-section about-magic-section nworld-magic-section earn-nandi-magic-1 js-scroll">
         <div class="container">
             <div class="row">
@@ -236,23 +236,23 @@
         <div class="container">
             <div class="row align-items-center">
                 <!-- <div class="col-2 col-md-2"> -->
-                    
+
                 </div>
                 <div class="col-md-8 col-lg-8 col-sm-12 offset-lg-2">
                     <h1 class="sec-hd">Story of Nandi Panchgavya</h1>
                     <div class="story-of-nandi-panchgavya-detail">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer 
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
                         dipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
-                    <button type="button" class="btn btn-success">Know More</button>                        
-                
+                    <button type="button" class="btn btn-success">Know More</button>
+
                 </div>
                 <!-- <div class="col-2 col-md-2"> -->
-                    
+
                 </div>
             </div>
         </div>
-       
+
     </section>
 
     
@@ -321,21 +321,21 @@
         $(document).ready(function(){
         $('#col-video1').click(function(){
             $('#video1').toggle();
-           
+
         });
         $('#close1').click(function(){
             $('#video1').hide();
-            
+
 
         });
 
         $('#col-video2').click(function(){
             $('#video2').toggle();
-           
+
         });
         $('#close2').click(function(){
             $('#video2').hide();
-            
+
 
         });
     });
