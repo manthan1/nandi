@@ -50,13 +50,13 @@ header {
                 
             }
             img { 
-                width: 110px;
+                width: 120px;
                 margin: -30px 0 0 0;
                 @include max-width($xxl) {
-                    width: 100px;
+                    width: 110px;
                 }
                 @include max-width($md) {
-                    width: 78px;
+                    width: 80px;
                     margin: 0;
                 }
             }
@@ -90,10 +90,10 @@ header {
                 .nav-item {
                     display: flex;
                     align-items: center;
-                    margin: 0 10px;
+                    margin: 0 15px;
                     position: relative;
                     @include max-width($xxl) {
-                        margin: 0 12px;
+                        margin: 0 18px;
                     }
                     @include max-width($sm) {
                         display: block;
@@ -101,15 +101,15 @@ header {
                     .nav-link {
                         color: $primary;
                         text-transform: uppercase;
-                        padding: 0;
+                        padding: 10px 0;
                         margin-top: 16px;
-                        font-size: 21px;
+                        font-size: 22px;
                         @include min-width($lg) {
-                            font-size: 16px;
+                            font-size: 18px;
 
                         }
                         @include min-width($xxl) {
-                            font-size: 20px;
+                            font-size: 22px;
 
                         }
                         
@@ -210,9 +210,9 @@ header {
                             }
                         }
                         svg {
-                            height: 24px;
+                            height: 28px;
                             @include max-width($xxl) {
-                                height: 22px;
+                                height: 26px;
                             }
                             .cls-1 {fill:$primary;}
                         }

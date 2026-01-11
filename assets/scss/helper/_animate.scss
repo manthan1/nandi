@@ -4074,20 +4074,20 @@
 
 @-webkit-keyframes rotating {
   from {
-    @include transform(rotate(360deg))
+    @include transform(rotate(0deg))
   }
 
   to {
-    @include transform(rotate(0deg))
+    @include transform(rotate(360deg))
   }
 }
 @keyframes rotating {
   from {
-    @include transform(rotate(360deg))
+    @include transform(rotate(0deg))
   }
 
   to {
-    @include transform(rotate(0deg))
+    @include transform(rotate(360deg))
   }
 }
 
@@ -4114,19 +4114,19 @@
 
 @-webkit-keyframes windy {
 	0% {
-		transform: skewX(10deg) translate(-7px);
+		transform: skewX(5deg) translate(-5px);
 	}
 	100% {
-		transform: skewX(-13deg) translate(7px);
+		transform: skewX(-5deg) translate(5px);
 	}
 }
 
 @keyframes windy {
 	0% {
-		transform: skewX(10deg) translate(-7px);
+		transform: skewX(5deg) translate(-5px);
 	}
 	100% {
-		transform: skewX(-13deg) translate(7px);
+		transform: skewX(-5deg) translate(5px);
 	}
 }
 
